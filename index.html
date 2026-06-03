@@ -144,6 +144,8 @@ body{background:radial-gradient(circle at 88% 12%,rgba(185,133,114,.18),transpar
 .ico,#lifestyle .tile .ico{background:#F1E7DA;color:var(--teal)}.ba,.resultPair{background:#EFE3D5}.ba .label,.label{background:rgba(255,253,248,.86);color:var(--ink)}.ba input[type=range]::-webkit-slider-thumb{background:rgba(255,253,248,.95);box-shadow:0 0 0 1px rgba(31,42,39,.16)}.ba input[type=range]::-moz-range-thumb{background:rgba(255,253,248,.95)}.plan ul li::before{background:var(--sage)}.plan.featured ul li::before{background:var(--rosewood)}.badge,.option.active,.files div{background:var(--champagne);color:var(--ink)}.price{color:var(--rosewood)}.plan.featured .price{color:var(--champagne)}.reportBody,.success,.close,.progress,.drop{background:#F1E7DA}.reportTabs button,.insightsTabs button,.option,.field input,.field select,.field textarea{background:rgba(255,253,248,.86);border-color:var(--line);color:var(--ink)}.drop{border-color:var(--sage)}.status{color:var(--teal)}
 .footer,.footer a,.footGrid,.footGrid a,footer{color:rgba(255,253,248,.68)}.footGrid b,.foot b,.footer h2,.final h2{color:#FFFDF8}.footNote{border-top-color:rgba(228,214,196,.16);color:rgba(255,253,248,.50)}
 @media(max-width:900px){.links{background:rgba(255,253,248,.96)}.heroBg:after,.heroBg.auriHero:after{background:linear-gradient(180deg,rgba(247,242,234,0),rgba(247,242,234,.16))}}
+/* Public-safe Auri hero video loop. */
+.heroBg video,.heroBg img.heroPoster{width:100%;height:100%;object-fit:cover;object-position:52% 18%;filter:saturate(.96) contrast(1.02) sepia(.06);display:block}.heroBg img.heroPoster{display:none}@media(prefers-reduced-motion:reduce){.heroBg video{display:none}.heroBg img.heroPoster{display:block}}
 </style>
 </head>
 <body>
@@ -152,7 +154,11 @@ body{background:radial-gradient(circle at 88% 12%,rgba(185,133,114,.18),transpar
 
 <header class="hero">
   <div class="heroBg auriHero">
-    <img src="assets/auri-media/hero.webp" alt="Auri face and body analysis preview" width="2730" height="4096" fetchpriority="high" decoding="async">
+    <video autoplay muted loop playsinline preload="metadata" poster="assets/auri-media/hero.webp" aria-label="Auri face and body analysis preview">
+      <source src="assets/auri-media/hero-loop.webm" type="video/webm">
+      <source src="assets/auri-media/hero-loop.mp4" type="video/mp4">
+    </video>
+    <img class="heroPoster" src="assets/auri-media/hero.webp" alt="Auri face and body analysis preview" width="2730" height="4096" fetchpriority="high" decoding="async">
   </div>
   <div class="wrap heroInner">
     <div class="heroCopy">
