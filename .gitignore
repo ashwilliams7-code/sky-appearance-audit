@@ -1,0 +1,4 @@
+assets/*reference*/
+assets/*media*/
+index.html.bak-*
+.DS_Store
