@@ -1,6 +1,6 @@
 # Arii Engine Implementation Spec
 
-> **Status:** implementation-ready spec parked for the first real Arii engine prototype. Pair this with `auri-engine-architecture.md` and `auri-analysis-engine-options.md`.
+> **Status:** implementation-ready spec parked for the first real Arii engine prototype. Pair this with `arii-engine-architecture.md` and `arii-analysis-engine-options.md`.
 
 ## 1. MVP target
 
@@ -535,7 +535,7 @@ Use expert/human QA to rate:
 ## 11. First prototype CLI shape
 
 ```bash
-auri-engine analyze \
+arii-engine analyze \
   --manifest fixtures/sample_manifest.json \
   --out reports/sample_report.json \
   --render-html reports/sample_report.html

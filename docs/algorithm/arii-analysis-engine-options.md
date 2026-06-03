@@ -565,7 +565,7 @@ Start with **Option 3**, implemented in phases:
 engine/
   README.md
   pyproject.toml
-  auri_engine/
+  arii_engine/
     intake/
       quality_gate.py
       photo_protocol.py

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://auri.app/schemas/report.schema.json",
+  "$id": "https://arii.app/schemas/report.schema.json",
   "title": "AriiReport",
   "type": "object",
   "required": [

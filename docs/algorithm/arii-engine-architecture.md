@@ -443,7 +443,7 @@ Avoid:
 ```text
 engine/
   pyproject.toml
-  auri_engine/
+  arii_engine/
     pipeline.py
     config.py
     privacy.py
