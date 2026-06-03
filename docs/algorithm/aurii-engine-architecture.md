@@ -1,10 +1,10 @@
-# Arii Analysis Engine Architecture
+# Aurii Analysis Engine Architecture
 
-> **Status:** parked engineering blueprint for the Arii face + body analysis engine. This is not a claim about QOVES' proprietary internals; it is a public-inferred, differentiated Arii architecture.
+> **Status:** parked engineering blueprint for the Aurii face + body analysis engine. This is not a claim about QOVES' proprietary internals; it is a public-inferred, differentiated Aurii architecture.
 
 ## 1. Product definition
 
-Arii should be a private appearance-strategy engine, not an attractiveness rater.
+Aurii should be a private appearance-strategy engine, not an attractiveness rater.
 
 The engine's job is to turn a user's uploaded photo set and goals into a structured, calm, non-medical plan that answers:
 
@@ -17,7 +17,7 @@ The premium output is a ~30-page private report with clear evidence, limitations
 
 ## 2. Core principles
 
-- **Non-medical first:** Arii does not diagnose, prescribe, or imply clinical certainty.
+- **Non-medical first:** Aurii does not diagnose, prescribe, or imply clinical certainty.
 - **No public beauty score:** The system may compute internal normalized metrics, but the user-facing product is not a leaderboard or attractiveness verdict.
 - **Confidence-aware:** Every observation includes confidence, inputs used, limitations, and whether retakes are needed.
 - **Actionability over judgement:** Recommendations are ranked by likely personal ROI, not by how harshly something can be described.
@@ -44,7 +44,7 @@ User intake + consent
   -> optional retake/progress loop
 ```
 
-Arii should never jump straight from raw images to narrative text. The engine is a sequence of modules that each emit structured JSON.
+Aurii should never jump straight from raw images to narrative text. The engine is a sequence of modules that each emit structured JSON.
 
 ## 4. Required photo set
 
@@ -117,7 +117,7 @@ Outputs:
 
 Example decisions:
 - If face landmarks are reliable but body photo is cropped, face modules can proceed while body modules request retakes.
-- If lighting makes skin texture unreliable, Arii may discuss capture quality and grooming/photo direction but should not assert skin quality.
+- If lighting makes skin texture unreliable, Aurii may discuss capture quality and grooming/photo direction but should not assert skin quality.
 
 ### 5.3 Image normalization module
 
@@ -257,7 +257,7 @@ LLM prompts should require JSON first, narrative second. The report composer sho
 
 **Purpose:** prioritize what to do first.
 
-Arii recommendations are ranked by estimated ROI:
+Aurii recommendations are ranked by estimated ROI:
 
 ```text
 priority_score =
@@ -369,7 +369,7 @@ User-facing confidence tiers:
 
 ## 8. Safety and tone guardrails
 
-Arii should refuse or reframe:
+Aurii should refuse or reframe:
 - requests for a public attractiveness score;
 - harsh ranking against other people;
 - medical diagnosis from images;
@@ -443,7 +443,7 @@ Avoid:
 ```text
 engine/
   pyproject.toml
-  arii_engine/
+  aurii_engine/
     pipeline.py
     config.py
     privacy.py
