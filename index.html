@@ -126,14 +126,12 @@
 @media(max-width:1080px){.factorGrid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:820px){.factorGrid{grid-template-columns:1fr}}
 
-/* Auri public-safe abstract visuals — no competitor/person media. */
-.heroBg.safeHero{overflow:hidden;background:linear-gradient(135deg,#eef3f4 0%,#cddbe1 45%,#8198a0 100%)}
-.heroBg.safeHero:before{content:"";position:absolute;inset:-18%;background:radial-gradient(circle at 76% 20%,rgba(255,255,255,.72),transparent 22%),radial-gradient(circle at 34% 72%,rgba(35,49,55,.22),transparent 30%),linear-gradient(120deg,rgba(255,255,255,.14),transparent 45%);filter:blur(10px);animation:auroraDrift 14s ease-in-out infinite alternate}.heroBg.safeHero:after{background:linear-gradient(90deg,var(--mist) 2%,rgba(242,245,245,.76) 18%,rgba(242,245,245,0) 55%)}
-.safeHeroArt{position:absolute;right:8%;top:12%;width:min(520px,72%);aspect-ratio:4/5;border-radius:2.4rem;background:linear-gradient(160deg,rgba(255,255,255,.68),rgba(255,255,255,.18));border:1px solid rgba(255,255,255,.38);box-shadow:0 40px 110px rgba(35,49,55,.22);backdrop-filter:blur(12px);overflow:hidden;transform:rotate(1.2deg)}
-.safeHeroArt:before{content:"";position:absolute;inset:9%;border-radius:2rem;background:radial-gradient(ellipse at 50% 28%,rgba(35,49,55,.38) 0 9%,transparent 10%),radial-gradient(ellipse at 50% 44%,rgba(35,49,55,.22) 0 18%,transparent 19%),linear-gradient(180deg,rgba(205,219,225,.8),rgba(255,255,255,.24));opacity:.7}.safeHeroArt:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 38px,rgba(255,255,255,.22) 39px 40px),repeating-linear-gradient(0deg,transparent 0 38px,rgba(35,49,55,.06) 39px 40px);mix-blend-mode:soft-light}.scanLine{position:absolute;left:9%;right:9%;top:42%;height:2px;background:linear-gradient(90deg,transparent,#fff,transparent);box-shadow:0 0 26px rgba(255,255,255,.9);animation:scanMove 3.8s ease-in-out infinite}.metricPills{position:absolute;right:22px;bottom:22px;display:grid;gap:8px}.metricPills span{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:#233137;background:rgba(255,255,255,.72);border:1px solid rgba(255,255,255,.55);border-radius:999px;padding:8px 11px;backdrop-filter:blur(8px)}
-@keyframes scanMove{0%,100%{top:24%}50%{top:68%}}@keyframes auroraDrift{from{transform:translate3d(-2%,-1%,0) scale(1)}to{transform:translate3d(3%,2%,0) scale(1.04)}}
-.ba .baFill{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;padding:2rem;background:linear-gradient(145deg,#eef3f4,#d8e3e6)}.ba .baFill.after{clip-path:inset(0 0 0 var(--split,50%));background:linear-gradient(145deg,#e6efed,#b8c7bd)}.safeFace,.safeBody{position:relative;width:min(180px,58%);aspect-ratio:1;border-radius:50%;background:linear-gradient(150deg,#ffffff,#cddbe1);box-shadow:inset 0 -18px 30px rgba(35,49,55,.08),0 22px 45px rgba(35,49,55,.12)}.safeFace:before{content:"";position:absolute;inset:25% 22% 34%;border-radius:48% 48% 44% 44%;background:linear-gradient(180deg,#718991,#3f555d);opacity:.34}.safeFace:after{content:"";position:absolute;left:50%;top:16%;height:74%;width:2px;background:linear-gradient(transparent,#fff,transparent);box-shadow:-44px 22px 0 -1px rgba(255,255,255,.9),44px 22px 0 -1px rgba(255,255,255,.9)}.safeBody{border-radius:38% 38% 22% 22%;aspect-ratio:3/4}.safeBody:before{content:"";position:absolute;left:50%;top:8%;width:36%;aspect-ratio:1;border-radius:50%;background:#60757c;transform:translateX(-50%);opacity:.32}.safeBody:after{content:"";position:absolute;left:18%;right:18%;bottom:13%;height:54%;border-radius:40% 40% 18% 18%;background:#60757c;opacity:.24}.baText{font-family:'Fraunces',serif;font-size:1.25rem;color:#34464d}.baSub{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:#65777f}.refPreview{position:relative;overflow:hidden;background:#1d2a30;color:#f4f7f7;border:1px solid rgba(255,255,255,.1)}
-.refPreview:before{content:"";position:absolute;inset:-30%;background:radial-gradient(circle at 75% 15%,rgba(205,219,225,.35),transparent 28%),radial-gradient(circle at 10% 60%,rgba(93,118,126,.38),transparent 32%);filter:blur(16px);opacity:.75;pointer-events:none}.refPreview>*{position:relative;z-index:1}.refPreview .head p{color:rgba(244,247,247,.72)}.refPreview .eyebrow{color:#cddbe1}.refPreview h2{color:#fff}.refGrid{display:grid;grid-template-columns:1.15fr .85fr;gap:1.2rem;align-items:stretch;margin-top:2.4rem}.refVideoCard,.refStack,.refShot,.metricMock{border:1px solid rgba(255,255,255,.12);border-radius:1.35rem;background:rgba(255,255,255,.055);box-shadow:0 24px 80px rgba(0,0,0,.22);overflow:hidden}.refVideoCard{position:relative;min-height:520px;background:linear-gradient(140deg,#273940,#6f858d 48%,#dbe5e8)}.refVideoCard:before{content:"";position:absolute;inset:12%;border-radius:2rem;border:1px solid rgba(255,255,255,.24);background:linear-gradient(160deg,rgba(255,255,255,.2),rgba(255,255,255,.04))}.refVideoCard:after{content:"Auri abstract motion board";position:absolute;left:18px;bottom:18px;padding:8px 12px;border-radius:999px;background:rgba(0,0,0,.38);backdrop-filter:blur(8px);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#fff}.orb{position:absolute;border-radius:999px;background:rgba(255,255,255,.35);filter:blur(2px);animation:floatOrb 7s ease-in-out infinite alternate}.orb.one{width:170px;height:170px;right:13%;top:14%}.orb.two{width:110px;height:110px;left:16%;bottom:18%;animation-delay:-2s}.timelineLine{position:absolute;left:13%;right:13%;top:50%;height:2px;background:linear-gradient(90deg,transparent,#fff,transparent);box-shadow:0 0 24px rgba(255,255,255,.7)}@keyframes floatOrb{to{transform:translate3d(18px,-22px,0) scale(1.08)}}.refStack{display:grid;grid-template-columns:1fr 1fr;gap:0}.refShot{border-radius:0;background:#223138;min-height:250px;display:flex;flex-direction:column;justify-content:flex-end;position:relative}.refShot:before{content:"";position:absolute;inset:22px 22px 64px;border-radius:1.4rem;background:linear-gradient(145deg,rgba(255,255,255,.26),rgba(255,255,255,.06));border:1px solid rgba(255,255,255,.13)}.refShot span{display:block;padding:14px 16px 16px;font-size:13px;color:rgba(244,247,247,.72);border-top:1px solid rgba(255,255,255,.09)}.mockupStrip{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}.metricMock{min-height:210px;border-radius:1.2rem;padding:20px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(150deg,rgba(255,255,255,.13),rgba(255,255,255,.04))}.metricMock b{font-family:'Fraunces',serif;font-size:1.2rem;font-weight:400;color:#fff}.metricMock span{height:9px;border-radius:999px;background:linear-gradient(90deg,#cddbe1,rgba(205,219,225,.16));display:block}.metricMock span:nth-child(3){width:72%}.metricMock span:nth-child(4){width:54%}.refNote{margin-top:1rem;color:rgba(244,247,247,.55);font-size:.82rem;line-height:1.55}@media(max-width:900px){.refGrid{grid-template-columns:1fr}.refVideoCard{min-height:360px}.mockupStrip{grid-template-columns:1fr}.refStack{grid-template-columns:1fr}.refShot{min-height:260px}.safeHeroArt{right:4%;width:78%}}
+/* Owned Auri media pass. */
+.heroBg.auriHero{overflow:hidden;background:#cddbe1}.heroBg.auriHero img{width:100%;height:100%;object-fit:cover;object-position:52% 22%;filter:saturate(.88) contrast(1.02)}.heroBg.auriHero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--mist) 2%,rgba(242,245,245,.72) 18%,rgba(242,245,245,0) 58%)}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;margin:0}.ba img.after{clip-path:inset(0 0 0 var(--split,50%))}.refPreview{position:relative;overflow:hidden;background:#1d2a30;color:#f4f7f7;border:1px solid rgba(255,255,255,.1)}.refPreview:before{content:"";position:absolute;inset:-30%;background:radial-gradient(circle at 75% 15%,rgba(205,219,225,.35),transparent 28%),radial-gradient(circle at 10% 60%,rgba(93,118,126,.38),transparent 32%);filter:blur(16px);opacity:.75;pointer-events:none}.refPreview>*{position:relative;z-index:1}.refPreview .head p{color:rgba(244,247,247,.72)}.refPreview .eyebrow{color:#cddbe1}.refPreview h2{color:#fff}.refGrid{display:grid;grid-template-columns:1.15fr .85fr;gap:1.2rem;align-items:stretch;margin-top:2.4rem}.refVideoCard,.refStack,.refShot{border:1px solid rgba(255,255,255,.12);border-radius:1.35rem;background:rgba(255,255,255,.055);box-shadow:0 24px 80px rgba(0,0,0,.22);overflow:hidden}.refVideoCard{position:relative;min-height:520px}.refVideoCard img{width:100%;height:100%;min-height:520px;object-fit:cover;display:block}.refVideoCard:after{content:"Auri media preview";position:absolute;left:18px;bottom:18px;padding:8px 12px;border-radius:999px;background:rgba(0,0,0,.38);backdrop-filter:blur(8px);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#fff}.refStack{display:grid;grid-template-columns:1fr 1fr;gap:0}.refShot{border-radius:0;background:#223138}.refShot img{width:100%;height:250px;object-fit:cover;object-position:50% 18%;filter:saturate(.92)}.refShot span{display:block;padding:14px 16px 16px;font-size:13px;color:rgba(244,247,247,.72);border-top:1px solid rgba(255,255,255,.09)}.mockupStrip{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}.mockupStrip img{width:100%;height:210px;object-fit:cover;border-radius:1.2rem;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05)}.refNote{margin-top:1rem;color:rgba(244,247,247,.55);font-size:.82rem;line-height:1.55}@media(max-width:900px){.refGrid{grid-template-columns:1fr}.refVideoCard,.refVideoCard img{min-height:360px}.mockupStrip{grid-template-columns:1fr}.refStack{grid-template-columns:1fr}.refShot img{height:300px}}
+/* Production owned-media pass */
+body{font-family:Switzer,system-ui,-apple-system,sans-serif}h1,h2,.brand,.mark{font-family:Switzer,system-ui,-apple-system,sans-serif}.brand,.mark{font-weight:600}h1 em{font-family:inherit}.join{display:inline-flex;align-items:center;gap:.45rem;text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;font-weight:600;color:var(--teal);background:rgba(255,255,255,.74);border:1px solid var(--line);border-radius:999px;padding:.55rem .9rem;margin-bottom:1.2rem}.heroBg.auriHero:after{background:linear-gradient(90deg,var(--mist) 2%,rgba(242,245,245,.76) 20%,rgba(242,245,245,0) 60%)}.heroBg.auriHero img{object-position:52% 18%}.transform>*{min-width:0}.sliderGrid{grid-template-columns:repeat(2,minmax(0,1fr));min-width:0;width:100%}.sliderGrid>*{min-width:0;width:100%}.ba{aspect-ratio:3/4;min-width:0;width:100%}.ba img{object-position:50% 18%}.refVideoCard.productShot{background:rgba(255,255,255,.06);padding:16px;display:flex;align-items:center;justify-content:center}.refVideoCard.productShot:after{content:"Auri report preview"}.productShot img{width:100%;height:auto;min-height:0;max-height:620px;object-fit:contain;border-radius:1rem;background:rgba(255,255,255,.04)}.mockupStrip img{object-fit:contain;background:rgba(255,255,255,.06);padding:10px}.lifestyleVisuals{display:grid;grid-template-columns:1fr 1fr 1.2fr;gap:14px;margin:0 0 24px}.lifestyleVisuals img{width:100%;height:220px;object-fit:cover;object-position:50% 18%;border-radius:1rem;border:1px solid var(--line);background:#fff;box-shadow:0 18px 45px rgba(35,49,55,.08)}.resultGallery{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:2.4rem}.resultPair{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:0;overflow:hidden;border-radius:1.2rem;background:#e8eef1;border:1px solid var(--line);min-height:360px}.resultPair img{width:100%;height:100%;object-fit:cover;object-position:50% 18%}.resultPair span{position:absolute;left:14px;right:14px;bottom:14px;padding:9px 12px;border-radius:999px;background:rgba(255,255,255,.78);backdrop-filter:blur(8px);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:#34464d;text-align:center}.membershipVisual{margin:0 0 1.4rem}.membershipVisual img{width:min(520px,100%);margin:0 auto;border-radius:1rem;border:1px solid var(--line);box-shadow:var(--shadow)}@media(max-width:1120px){.transform{grid-template-columns:1fr}.sliderGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:1080px){.resultGallery{grid-template-columns:repeat(2,1fr)}}@media(max-width:640px){.resultGallery,.lifestyleVisuals{grid-template-columns:1fr}.resultPair{min-height:420px}.sliderGrid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -141,17 +139,14 @@
 <div class="navShell"><div class="wrap"><nav><a class="brand" href="#"><span class="mark">A</span>Auri</a><div class="links" id="navLinks"><a href="#why">Why Auri</a><a href="#how">How it works</a><a href="#science">Evidence</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><button class="ghost" data-open-login>Login</button></div><button class="ghost mobile" id="menuBtn">Menu</button><button class="btn" data-open-flow>Start my plan</button></nav></div></div>
 
 <header class="hero">
-  <div class="heroBg safeHero" aria-hidden="true">
-    <div class="safeHeroArt">
-      <div class="scanLine"></div>
-      <div class="metricPills"><span>face map</span><span>posture read</span><span>style plan</span></div>
-    </div>
+  <div class="heroBg auriHero">
+    <img src="assets/auri-media/hero.webp" alt="Auri face and body analysis preview" width="2730" height="4096" fetchpriority="high" decoding="async">
   </div>
   <div class="wrap heroInner">
     <div class="heroCopy">
-      <div class="join">Join <strong>50,000+</strong> people planning their glow-up</div>
+      <div class="join">Private beta · face + body analysis</div>
       <h1>The science of your face <em>and</em> body. Without surgery.</h1>
-      <p class="lead">Auri gives you a private, doctor-informed read on dozens of markers across your face and your physique — skin, hair, grooming and photo capture, plus posture, proportion, body composition and how your clothes fit. Evidence-led, never judgemental, it turns what it sees into one personalised plan you can actually act on.</p>
+      <p class="lead">Auri gives you a private, doctor-informed read across your face and frame — skin, hair, grooming, photos, posture, proportions, body composition and fit. No public score, no shame spiral: just the highest-return changes ranked into a practical plan.</p>
       <div class="ctas">
         <button class="btn" data-open-flow>Start my plan</button>
         <a class="btn light" href="#how">How it works</a>
@@ -170,17 +165,6 @@
   </div>
 </header>
 
-<section class="wrap logos" id="press">
-  <p class="eyebrow logos-label">As featured in</p>
-  <div class="logoGrid">
-    <div class="logo">Press Outlet</div>
-    <div class="logo">The Magazine</div>
-    <div class="logo">Daily Journal</div>
-    <div class="logo">Wellbeing Review</div>
-    <div class="logo">Tech Digest</div>
-    <div class="logo">Lifestyle Weekly</div>
-  </div>
-</section>
 
 <section class="wrap logos">
   <p class="logosLead">Private, evidence-led face &amp; body planning</p>
@@ -198,7 +182,7 @@
   <div class="head">
     <div>
       <span class="eyebrow">New approach</span>
-      <h2>Life-changing transformations.</h2>
+      <h2>Your strongest visual levers, ranked.</h2>
     </div>
     <p>Auri reads your face and your physique together — skin, hair and grooming alongside posture, proportion and fit — then turns that read into a calm, prioritised plan. No scores, no judgement. Just clear direction on the changes that genuinely move how you present, and the confidence that follows.</p>
   </div>
@@ -216,16 +200,16 @@
 
     <div class="sliderGrid">
       <div class="ba" data-slider>
-        <div class="baFill"><div class="safeFace"></div><div class="baText">Baseline read</div><div class="baSub">lighting · skin · grooming</div></div>
-        <div class="baFill after"><div class="safeFace"></div><div class="baText">Direction plan</div><div class="baSub">angles · routine · presentation</div></div>
+        <img src="assets/auri-media/face-before.webp" alt="Face baseline preview" width="1359" height="1813" loading="lazy" decoding="async">
+        <img class="after" src="assets/auri-media/face-after.webp" alt="Face direction preview" width="1359" height="1813" loading="lazy" decoding="async">
         <span class="label before">BEFORE</span>
         <span class="label afterLabel">DIRECTION</span>
         <input type="range" min="5" max="95" value="50" aria-label="comparison">
       </div>
 
       <div class="ba" data-slider>
-        <div class="baFill"><div class="safeBody"></div><div class="baText">Frame read</div><div class="baSub">posture · fit · proportion</div></div>
-        <div class="baFill after"><div class="safeBody"></div><div class="baText">Direction plan</div><div class="baSub">training · tailoring · stance</div></div>
+        <img src="assets/auri-media/male-before.webp" alt="Frame baseline preview" width="1874" height="2499" loading="lazy" decoding="async">
+        <img class="after" src="assets/auri-media/male-after.webp" alt="Frame direction preview" width="1128" height="1504" loading="lazy" decoding="async">
         <span class="label before">BEFORE</span>
         <span class="label afterLabel">DIRECTION</span>
         <input type="range" min="5" max="95" value="50" aria-label="comparison">
@@ -237,39 +221,37 @@
 <section class="wrap section refPreview" id="media-preview">
   <div class="head">
     <div>
-      <span class="eyebrow">Public-safe visual pass</span>
-      <h2>Cinematic without borrowed faces.</h2>
+      <span class="eyebrow">Auri report preview</span>
+      <h2>See exactly what to change first.</h2>
     </div>
-    <p>All public visuals here are abstract Auri interface treatments — no competitor portraits and no scraped assets.</p>
+    <p>Auri turns face and body signals into a private ranked protocol — what to do now, what to test, what to ignore, and when to ask a professional.</p>
   </div>
 
   <div class="refGrid">
-    <div class="refVideoCard" aria-label="Abstract Auri motion board">
-      <div class="orb one"></div>
-      <div class="orb two"></div>
-      <div class="timelineLine"></div>
+    <div class="refVideoCard productShot">
+      <img src="assets/auri-media/report-viewer.webp" alt="Auri personalised report interface preview" width="1982" height="1664" loading="lazy" decoding="async">
     </div>
     <div class="refStack">
-      <div class="refShot"><span>Face map placeholder</span></div>
-      <div class="refShot"><span>Direction layer placeholder</span></div>
-      <div class="refShot"><span>Body posture placeholder</span></div>
-      <div class="refShot"><span>Outcome preview placeholder</span></div>
+      <div class="refShot"><img src="assets/auri-media/biometrics.webp" alt="Biometrics and progress preview" width="480" height="320" loading="lazy" decoding="async"><span>Biometrics + progress map</span></div>
+      <div class="refShot"><img src="assets/auri-media/affects.webp" alt="Appearance factors visual preview" width="1250" height="1099" loading="lazy" decoding="async"><span>What affects first impressions</span></div>
+      <div class="refShot"><img src="assets/auri-media/female-after.webp" alt="Female direction preview" width="1128" height="1504" loading="lazy" decoding="async"><span>Direction image</span></div>
+      <div class="refShot"><img src="assets/auri-media/male-after.webp" alt="Male direction preview" width="1128" height="1504" loading="lazy" decoding="async"><span>Frame direction image</span></div>
     </div>
   </div>
 
   <div class="mockupStrip">
-    <div class="metricMock"><b>Report viewer</b><span></span><span></span><span></span></div>
-    <div class="metricMock"><b>Outcome matrix</b><span></span><span></span><span></span></div>
-    <div class="metricMock"><b>Membership card</b><span></span><span></span><span></span></div>
+    <img src="assets/auri-media/membership-card.webp" alt="Membership card preview" width="859" height="500" loading="lazy" decoding="async">
+    <img src="assets/auri-media/science.webp" alt="Evidence and science visual" width="512" height="342" loading="lazy" decoding="async">
+    <img src="assets/auri-media/personal.webp" alt="Personalised analysis visual" width="480" height="320" loading="lazy" decoding="async">
   </div>
-  <p class="refNote">Temporary public placeholders only. Final launch should use user-owned, licensed, or newly generated Auri media.</p>
+  <p class="refNote">Owned Auri preview assets are used here with original Auri copy, a calmer visual hierarchy, and product-first sections built for a private beta.</p>
 </section>
 
 <section class="wrap section science" id="science">
   <div class="head">
     <div>
       <span class="eyebrow">What the evidence says</span>
-      <h2>Looks influence almost everything.</h2>
+      <h2>Appearance shapes first impressions — but it is not destiny.</h2>
     </div>
     <p>Decades of peer-reviewed research show that how we present — face and body alike — quietly shapes first impressions, opportunity and self-perception. Auri turns that evidence into private, practical guidance. None of this is destiny, and none of it is medical advice.</p>
   </div>
@@ -559,6 +541,12 @@
       <p>Appearance is rarely about one big thing. It is the quiet sum of how you rest, move, eat and care for yourself — read across your face and body. Auri maps these inputs to the cues people actually notice, so you can see what is worth your attention. Observations only, never a diagnosis or a promise.</p>
     </div>
 
+    <div class="lifestyleVisuals">
+      <img src="assets/auri-media/lifestyle.webp" alt="Lifestyle factors preview" width="220" height="330" loading="lazy" decoding="async">
+      <img src="assets/auri-media/natural.webp" alt="Natural appearance inputs preview" width="220" height="330" loading="lazy" decoding="async">
+      <img src="assets/auri-media/female-before.webp" alt="Baseline capture preview" width="1874" height="2499" loading="lazy" decoding="async">
+    </div>
+
     <div class="factorGrid">
       <div class="tile">
         <span class="ico" aria-hidden="true">
@@ -627,46 +615,6 @@
   </div>
 </section>
 
-<section class="wrap section" id="advisors">
-  <div class="head">
-    <div>
-      <span class="eyebrow">Reviewed by experts</span>
-      <h2>Guided by qualified advisors.</h2>
-    </div>
-    <p>Board-certified clinicians and accredited coaches inform our method across skin, dental, cosmetic safety, and physical training and posture — so guidance stays grounded, current, and within sensible limits. The advisors shown below are placeholders; named profiles will appear here once individuals are confirmed with their permission.</p>
-  </div>
-
-  <div class="tiles">
-    <div class="tile">
-      <span class="eyebrow">Dermatology</span>
-      <h3>Dr. Placeholder</h3>
-      <p>Reviews how we discuss skin texture, tone, hydration, and routine sequencing — keeping language educational and non-diagnostic, never a substitute for seeing your own clinician.</p>
-      <p style="color:var(--muted);font-size:.82rem;">Placeholder advisor — to be named with permission.</p>
-    </div>
-
-    <div class="tile">
-      <span class="eyebrow">Dental</span>
-      <h3>Dr. Placeholder</h3>
-      <p>Reviews our framing of smile, alignment, and oral aesthetics in photos — ensuring we point toward qualified care rather than implying any treatment or outcome.</p>
-      <p style="color:var(--muted);font-size:.82rem;">Placeholder advisor — to be named with permission.</p>
-    </div>
-
-    <div class="tile">
-      <span class="eyebrow">Cosmetic safety</span>
-      <h3>Dr. Placeholder</h3>
-      <p>Reviews where we mention cosmetic options for face and body — checking that we stay informational, flag risks plainly, and always defer decisions to licensed practitioners.</p>
-      <p style="color:var(--muted);font-size:.82rem;">Placeholder advisor — to be named with permission.</p>
-    </div>
-
-    <div class="tile">
-      <span class="eyebrow">Strength &amp; posture</span>
-      <h3>Coach Placeholder</h3>
-      <p>Reviews our guidance on posture, proportion, composition, and styling — so body-focused suggestions are realistic, progressive, and kind rather than appearance-pressuring.</p>
-      <p style="color:var(--muted);font-size:.82rem;">Placeholder advisor — to be named with permission.</p>
-    </div>
-  </div>
-</section>
-
 <section class="wrap section" id="doctors">
   <div class="head">
     <div>
@@ -680,7 +628,7 @@
     <div class="quote">
       <h3>Advisory review layer</h3>
       <p>"The most reliable gains — for both face and body — usually come from reversible, evidence-informed habits: light, sleep, grooming, posture, fit and consistent movement. We surface those first, and only point toward clinical or cosmetic intervention once the simple, low-risk work has been given a fair chance."</p>
-      <small>Placeholder advisor quote for this mockup; replace with a named clinician only after written permission.</small>
+      <small>General educational framing only. Auri is non-medical and routes clinical questions to qualified professionals.</small>
     </div>
 
     <div class="tiles">
@@ -767,33 +715,20 @@
 <section class="wrap section" id="results">
   <div class="head">
     <div>
-      <span class="eyebrow">Real results</span>
-      <h2>What members say.</h2>
+      <span class="eyebrow">Visual direction gallery</span>
+      <h2>Private progress, shown clearly.</h2>
     </div>
-    <p>Quiet, private progress across face and body — clearer skin routines, easier grooming calls, better photos, steadier posture and styling that fits you. The quotes below are illustrative placeholders the owner will replace with real, consented member feedback.</p>
+    <p>Use the same split-view language throughout the page: baseline on the left, direction on the right, with copy focused on practical levers rather than public scores or guarantees.</p>
   </div>
 
-  <div class="tiles cols3">
-    <div class="tile">
-      <p class="quote-body">"It stopped feeling like guesswork. I finally understood my own face — what to actually focus on, in plain language, without anyone judging me."</p>
-      <p class="result-line">Result: a simpler skin and grooming routine, and photos that look like the best version of an ordinary day.</p>
-      <p class="attribution">— Member, 29 (placeholder)</p>
-    </div>
-
-    <div class="tile">
-      <p class="quote-body">"The body read was the surprise. Small posture and proportion notes, framed kindly, changed how I carry myself in a room."</p>
-      <p class="result-line">Result: steadier standing posture and styling choices that flatter my actual build, not a template.</p>
-      <p class="attribution">— Member, 34 (placeholder)</p>
-    </div>
-
-    <div class="tile">
-      <p class="quote-body">"No scores, no shame — just clear, evidence-led pointers I could act on at my own pace. It felt like a thoughtful second opinion."</p>
-      <p class="result-line">Result: better-lit, better-angled photos and a wardrobe and grooming plan I'm genuinely confident in.</p>
-      <p class="attribution">— Member, 41 (placeholder)</p>
-    </div>
+  <div class="resultGallery">
+    <div class="resultPair"><img src="assets/auri-media/result-1-before.webp" alt="Baseline preview 1" width="656" height="813" loading="lazy" decoding="async"><img src="assets/auri-media/result-1-after.webp" alt="Direction preview 1" width="656" height="813" loading="lazy" decoding="async"><span>Lighting + skin clarity</span></div>
+    <div class="resultPair"><img src="assets/auri-media/result-2-before.webp" alt="Baseline preview 2" width="800" height="1103" loading="lazy" decoding="async"><img src="assets/auri-media/result-2-after.webp" alt="Direction preview 2" width="800" height="1102" loading="lazy" decoding="async"><span>Grooming + framing</span></div>
+    <div class="resultPair"><img src="assets/auri-media/result-4-before.webp" alt="Baseline preview 3" width="656" height="812" loading="lazy" decoding="async"><img src="assets/auri-media/result-4-after.webp" alt="Direction preview 3" width="656" height="812" loading="lazy" decoding="async"><span>Posture + presentation</span></div>
+    <div class="resultPair"><img src="assets/auri-media/result-7-before.webp" alt="Baseline preview 4" width="656" height="812" loading="lazy" decoding="async"><img src="assets/auri-media/result-7-after.webp" alt="Direction preview 4" width="656" height="812" loading="lazy" decoding="async"><span>Photo capture direction</span></div>
   </div>
 
-  <p class="results-note">Illustrative placeholders only. Auri is a private, non-medical appearance-intelligence service — no diagnosis, prescription, or guaranteed outcomes.</p>
+  <p class="results-note">Visual previews are for product demonstration only. Auri is private, non-medical appearance intelligence — no diagnosis, prescription, attractiveness score, or guaranteed outcome.</p>
 </section>
 
 <section class="wrap section" id="pricing">
@@ -804,6 +739,8 @@
     </div>
     <p>Auri is in private beta. Pricing below is provisional and may change as we open to a wider group. Every tier reads the whole picture &mdash; face and body together &mdash; never a single score, never a verdict.</p>
   </div>
+
+  <div class="membershipVisual"><img src="assets/auri-media/membership-card.webp" alt="Auri membership card preview" width="859" height="500" loading="lazy" decoding="async"></div>
 
   <div class="pricing">
     <div class="plan" data-plan="Snapshot">
@@ -979,31 +916,31 @@
       </div>
       <div>
         <b>Company</b>
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
+        <a href="#why">Why Auri</a>
+        <a href="#science">Evidence</a>
         <a href="#insights">Insights</a>
-        <a href="#contact">Contact</a>
+        <a href="mailto:hello@auri.app">Contact</a>
         <a href="#clinics">For clinics</a>
       </div>
       <div>
-        <b>Legal</b>
-        <a href="#privacy">Privacy policy</a>
-        <a href="#terms">Terms</a>
-        <a href="#disclaimer">Medical disclaimer</a>
+        <b>Product</b>
+        <a href="#media-preview">Product preview</a>
+        <a href="#sample">Sample report</a>
+        <a href="#pricing">Pricing</a>
       </div>
       <div>
-        <b>Social</b>
-        <a href="#linkedin">LinkedIn</a>
-        <a href="#youtube">YouTube</a>
-        <a href="#instagram">Instagram</a>
+        <b>Safety</b>
+        <a href="#doctors">Medical boundaries</a>
+        <a href="#faq">Privacy FAQ</a>
+        <a href="#results">Visual gallery</a>
       </div>
     </div>
     <p class="footNote">Imagery throughout is illustrative and may be digitally generated; it does not depict outcomes. Individual results vary. Auri provides general, non-medical appearance guidance only and is not a medical service — it does not diagnose, treat, or prescribe. © 2026 Auri. All rights reserved.</p>
   </div>
 </footer><button class="btn mobileCta" data-open-flow>Start my plan</button>
-<div class="modal" id="flowModal" aria-hidden="true"><div class="dialog"><button class="close" data-close>×</button><div class="eyebrow">Auri intake</div><h3>Start your appearance plan</h3><p>Selected plan: <b id="selectedPlan">Full Auri Plan</b></p><div class="progress"><i id="progressBar"></i></div><div class="flowStep active" data-step="0"><h3>What is your main goal?</h3><div class="options goalOptions"><button class="option">Dating &amp; profile photos</button><button class="option">Full face &amp; body glow-up</button><button class="option">Professional presence</button><button class="option">Consult clarity</button></div><p class="status" id="goalStatus"></p></div><div class="flowStep" data-step="1"><h3>Upload your photo set</h3><label class="drop" for="photos"><b>Click to choose images</b><br><span>Face: front, smile, profile, 45°. Body: front and side, relaxed posture. Demo keeps files local.</span></label><input id="photos" type="file" accept="image/*" multiple class="hidden"><div class="files" id="fileList"></div><p class="status" id="fileStatus"></p></div><div class="flowStep" data-step="2"><h3>Preferences</h3><div class="field"><label>Email for report handoff</label><input id="email" type="email" placeholder="you@example.com"></div><div class="field"><label>Boundary</label><select id="boundary"><option selected>Non-surgical first</option><option>Open to professional consult prompts</option><option>No clinic/procedure suggestions</option></select></div><div class="field"><label>Focus / notes</label><textarea id="notes" rows="3" placeholder="e.g. face + posture, dating photos, no invasive procedures"></textarea></div><p class="status" id="prefStatus"></p></div><div class="flowStep" data-step="3"><div class="success"><h3>Demo intake complete</h3><p>Your Auri request is ready. Production next step: secure upload, payment, advisor workflow, and report delivery.</p></div></div><div class="flowActions"><button class="btn light" id="backStep">Back</button><button class="btn" id="nextStep">Next</button></div></div></div><div class="modal" id="loginModal"><div class="dialog"><button class="close" data-close>×</button><div class="eyebrow">Client portal</div><h3>Magic-link login placeholder</h3><div class="field"><input id="loginEmail" type="email" placeholder="client@example.com"></div><button class="btn" id="sendLogin">Send magic link</button><p class="status" id="loginStatus"></p></div></div>
+<div class="modal" id="flowModal" aria-hidden="true"><div class="dialog"><button class="close" data-close>×</button><div class="eyebrow">Auri intake</div><h3>Start your appearance plan</h3><p>Selected plan: <b id="selectedPlan">Full Auri Plan</b></p><div class="progress"><i id="progressBar"></i></div><div class="flowStep active" data-step="0"><h3>What is your main goal?</h3><div class="options goalOptions"><button class="option">Dating &amp; profile photos</button><button class="option">Full face &amp; body glow-up</button><button class="option">Professional presence</button><button class="option">Consult clarity</button></div><p class="status" id="goalStatus"></p></div><div class="flowStep" data-step="1"><h3>Upload your photo set</h3><label class="drop" for="photos"><b>Click to choose images</b><br><span>Face: front, smile, profile, 45°. Body: front and side, relaxed posture. Demo keeps files local.</span></label><input id="photos" type="file" accept="image/*" multiple class="hidden"><div class="files" id="fileList"></div><p class="status" id="fileStatus"></p></div><div class="flowStep" data-step="2"><h3>Preferences</h3><div class="field"><label>Email for report handoff</label><input id="email" type="email" placeholder="you@example.com"></div><div class="field"><label>Boundary</label><select id="boundary"><option selected>Non-surgical first</option><option>Open to professional consult prompts</option><option>No clinic/procedure suggestions</option></select></div><div class="field"><label>Focus / notes</label><textarea id="notes" rows="3" placeholder="e.g. face + posture, dating photos, no invasive procedures"></textarea></div><p class="status" id="prefStatus"></p></div><div class="flowStep" data-step="3"><div class="success"><h3>Demo intake complete</h3><p>Your Auri request is ready. We’ll connect secure upload, payment and report delivery before opening the beta.</p></div></div><div class="flowActions"><button class="btn light" id="backStep">Back</button><button class="btn" id="nextStep">Next</button></div></div></div><div class="modal" id="loginModal"><div class="dialog"><button class="close" data-close>×</button><div class="eyebrow">Client portal</div><h3>Client portal login</h3><div class="field"><input id="loginEmail" type="email" placeholder="client@example.com"></div><button class="btn" id="sendLogin">Send magic link</button><p class="status" id="loginStatus"></p></div></div>
 <script>
-var $=function(q,r){return (r||document).querySelector(q)},$$=function(q,r){return [].slice.call((r||document).querySelectorAll(q))};var selectedPlan='Full Auri Plan',step=0,selectedGoal='',uploaded=false;var studies={face:[['Skin & complexion','Even tone, clear skin and good lighting shape how rested and healthy you read.','Face'],['Hair & framing','Cut and hairline framing change perceived face shape fast.','Face'],['Features in balance','Auri maps proportion and symmetry cues to find your highest-return tweaks.','Face'],['Photo truth','Lens distance and angle distort faces; we fix capture before conclusions.','Face']],body:[['Posture & frame','Standing taller and squaring shoulders changes your silhouette instantly.','Body'],['Composition','Body-fat and muscle balance drive most visible physique change.','Body'],['Proportion','Shoulder-to-waist lines guide training and styling focus.','Body'],['Fit & styling','Clothing cut and fit can shift proportions before any gym result.','Body']],dating:[['Profile lift','Photo order, expression and context shape dating decisions in seconds.','Dating'],['Full-frame presence','Full-body shots, posture and fit read as much as the face in a profile.','Dating'],['Signal clarity','Hair, skin, frame and wardrobe communicate intentionality.','Dating'],['Safer escalation','Consult prompts stay separate from simple presentation fixes.','Dating']],career:[['Polish','Sharper headshots and grooming raise perceived professionalism.','Career'],['Build & bearing','Posture, build and how clothes fit shape perceived authority — not just grooming.','Career'],['Presence','Posture and frame read as confidence in the room.','Career'],['Spend smarter','Ranked steps prevent premature clinic or product spend.','Career']],confidence:[['Clarity','A ranked plan replaces anxious guesswork with action.','You'],['No harsh score','Auri ranks fixes by payoff, not a public attractiveness rating.','You'],['Momentum','Small reversible wins compound into real confidence.','You'],['Kindness','Built for people who feel unsure, not to judge them.','You']]};function scard(x){return '<div class="studyCard"><b>'+x[0]+'</b><span>'+x[1]+'</span><small>'+x[2]+'</small></div>'}function renderStudies(k){k=k||'face';var g=$('#studyGrid');if(g)g.innerHTML=studies[k].map(scard).join('')}renderStudies();var report={summary:['Executive summary','Your highest-return gains likely come from photo capture, skin and hair framing for the face, plus posture, composition and clothing fit for the body.'],face:['Face analysis','Lens distance, soft side light, haircut silhouette, neckline, skin clarity and under-eye contrast, ranked by impact and reversibility.'],body:['Body analysis','Posture and frame first, then body-composition direction, proportion-focused training emphasis, and styling that flatters your lines.'],plan:['30-day protocol','Week 1: photo reset, grooming and posture. Week 2: hair, style and wardrobe fit. Week 3: skin and training consistency. Week 4: reshoot, compare, decide any consult.']};$$('[data-slider]').forEach(function(s){var input=$('input',s);if(!input)return;function set(){s.style.setProperty('--split',input.value+'%')}input.addEventListener('input',set);set()});function openModal(id){var m=$(id);if(m){m.classList.add('open');m.setAttribute('aria-hidden','false')}}function closeModals(){$$('.modal').forEach(function(m){m.classList.remove('open');m.setAttribute('aria-hidden','true')})}function updateFlow(){$$('.flowStep').forEach(function(el,i){el.classList.toggle('active',i===step)});var pb=$('#progressBar');if(pb)pb.style.width=((step+1)*25)+'%';var bs=$('#backStep');if(bs)bs.style.visibility=step?'visible':'hidden';var ns=$('#nextStep');if(ns)ns.textContent=step===2?'Complete intake':step===3?'Done':'Next';var fa=$('.flowActions');if(fa)fa.style.display=step===3?'none':'flex';var sp=$('#selectedPlan');if(sp)sp.textContent=selectedPlan}$$('[data-open-flow]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();closeModals();openModal('#flowModal');updateFlow()})});$$('[data-open-login]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();openModal('#loginModal')})});$$('[data-close]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();closeModals()})});$$('.modal').forEach(function(m){m.addEventListener('click',function(e){if(e.target===m)closeModals()})});var db=$('#dismissBar');if(db)db.onclick=function(){$('#bar').classList.add('hidden')};var mb=$('#menuBtn');if(mb)mb.onclick=function(){$('#navLinks').classList.toggle('open')};$$('[data-select-plan]').forEach(function(b){b.addEventListener('click',function(){selectedPlan=b.getAttribute('data-select-plan');$$('.plan').forEach(function(p){p.style.outline=p.getAttribute('data-plan')===selectedPlan?'2px solid var(--steel)':'none'});openModal('#flowModal');updateFlow()})});$$('#studyTabs button').forEach(function(b){b.addEventListener('click',function(){$$('#studyTabs button').forEach(function(x){x.classList.remove('active')});b.classList.add('active');renderStudies(b.getAttribute('data-study'))})});$$('#reportTabs button').forEach(function(b){b.addEventListener('click',function(){$$('#reportTabs button').forEach(function(x){x.classList.remove('active')});b.classList.add('active');var k=b.getAttribute('data-tab');if(report[k]){$('#tabTitle').textContent=report[k][0];$('#tabBody').textContent=report[k][1]}})});$$('.quad').forEach(function(q){q.addEventListener('click',function(){$$('.quad').forEach(function(x){x.classList.remove('active')});q.classList.add('active');var d=$('#matrixDetail');if(d)d.textContent=q.getAttribute('data-detail')})});$$('.faqItem button').forEach(function(b){b.addEventListener('click',function(){b.closest('.faqItem').classList.toggle('open')})});$$('.goalOptions .option').forEach(function(b){b.addEventListener('click',function(){$$('.goalOptions .option').forEach(function(x){x.classList.remove('active')});b.classList.add('active');selectedGoal=b.textContent;$('#goalStatus').textContent='Selected: '+selectedGoal})});var ph=$('#photos');if(ph)ph.addEventListener('change',function(e){var files=[].slice.call(e.target.files);uploaded=files.length>0;$('#fileList').innerHTML=files.map(function(f){return '<div>'+f.name+'</div>'}).join('');$('#fileStatus').textContent=uploaded?files.length+' file(s) selected.':'No files selected.'});var bk=$('#backStep');if(bk)bk.onclick=function(){if(step>0){step--;updateFlow()}};var nx=$('#nextStep');if(nx)nx.onclick=function(){if(step===0&&!selectedGoal){$('#goalStatus').innerHTML='<span class="error">Choose a goal first.</span>';return}if(step===1&&!uploaded){$('#fileStatus').innerHTML='<span class="error">Select at least one image for the demo flow.</span>';return}if(step===2&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test($('#email').value)){$('#prefStatus').innerHTML='<span class="error">Enter a valid email.</span>';return}if(step<3){step++;updateFlow()}};var sl=$('#sendLogin');if(sl)sl.onclick=function(){var v=$('#loginEmail').value;$('#loginStatus').textContent=/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)?'Magic-link placeholder ready for '+v:'Enter a valid email first.'};
+var $=function(q,r){return (r||document).querySelector(q)},$$=function(q,r){return [].slice.call((r||document).querySelectorAll(q))};var selectedPlan='Full Auri Plan',step=0,selectedGoal='',uploaded=false;var studies={face:[['Skin & complexion','Even tone, clear skin and good lighting shape how rested and healthy you read.','Face'],['Hair & framing','Cut and hairline framing change perceived face shape fast.','Face'],['Features in balance','Auri maps proportion and symmetry cues to find your highest-return tweaks.','Face'],['Photo truth','Lens distance and angle distort faces; we fix capture before conclusions.','Face']],body:[['Posture & frame','Standing taller and squaring shoulders changes your silhouette instantly.','Body'],['Composition','Body-fat and muscle balance drive most visible physique change.','Body'],['Proportion','Shoulder-to-waist lines guide training and styling focus.','Body'],['Fit & styling','Clothing cut and fit can shift proportions before any gym result.','Body']],dating:[['Profile lift','Photo order, expression and context shape dating decisions in seconds.','Dating'],['Full-frame presence','Full-body shots, posture and fit read as much as the face in a profile.','Dating'],['Signal clarity','Hair, skin, frame and wardrobe communicate intentionality.','Dating'],['Safer escalation','Consult prompts stay separate from simple presentation fixes.','Dating']],career:[['Polish','Sharper headshots and grooming raise perceived professionalism.','Career'],['Build & bearing','Posture, build and how clothes fit shape perceived authority — not just grooming.','Career'],['Presence','Posture and frame read as confidence in the room.','Career'],['Spend smarter','Ranked steps prevent premature clinic or product spend.','Career']],confidence:[['Clarity','A ranked plan replaces anxious guesswork with action.','You'],['No harsh score','Auri ranks fixes by payoff, not a public attractiveness rating.','You'],['Momentum','Small reversible wins compound into real confidence.','You'],['Kindness','Built for people who feel unsure, not to judge them.','You']]};function scard(x){return '<div class="studyCard"><b>'+x[0]+'</b><span>'+x[1]+'</span><small>'+x[2]+'</small></div>'}function renderStudies(k){k=k||'face';var g=$('#studyGrid');if(g)g.innerHTML=studies[k].map(scard).join('')}renderStudies();var report={summary:['Executive summary','Your highest-return gains likely come from photo capture, skin and hair framing for the face, plus posture, composition and clothing fit for the body.'],face:['Face analysis','Lens distance, soft side light, haircut silhouette, neckline, skin clarity and under-eye contrast, ranked by impact and reversibility.'],body:['Body analysis','Posture and frame first, then body-composition direction, proportion-focused training emphasis, and styling that flatters your lines.'],plan:['30-day protocol','Week 1: photo reset, grooming and posture. Week 2: hair, style and wardrobe fit. Week 3: skin and training consistency. Week 4: reshoot, compare, decide any consult.']};$$('[data-slider]').forEach(function(s){var input=$('input',s);if(!input)return;function set(){s.style.setProperty('--split',input.value+'%')}input.addEventListener('input',set);set()});function openModal(id){var m=$(id);if(m){m.classList.add('open');m.setAttribute('aria-hidden','false')}}function closeModals(){$$('.modal').forEach(function(m){m.classList.remove('open');m.setAttribute('aria-hidden','true')})}function updateFlow(){$$('.flowStep').forEach(function(el,i){el.classList.toggle('active',i===step)});var pb=$('#progressBar');if(pb)pb.style.width=((step+1)*25)+'%';var bs=$('#backStep');if(bs)bs.style.visibility=step?'visible':'hidden';var ns=$('#nextStep');if(ns)ns.textContent=step===2?'Complete intake':step===3?'Done':'Next';var fa=$('.flowActions');if(fa)fa.style.display=step===3?'none':'flex';var sp=$('#selectedPlan');if(sp)sp.textContent=selectedPlan}$$('[data-open-flow]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();closeModals();openModal('#flowModal');updateFlow()})});$$('[data-open-login]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();openModal('#loginModal')})});$$('[data-close]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();closeModals()})});$$('.modal').forEach(function(m){m.addEventListener('click',function(e){if(e.target===m)closeModals()})});var db=$('#dismissBar');if(db)db.onclick=function(){$('#bar').classList.add('hidden')};var mb=$('#menuBtn');if(mb)mb.onclick=function(){$('#navLinks').classList.toggle('open')};$$('[data-select-plan]').forEach(function(b){b.addEventListener('click',function(){selectedPlan=b.getAttribute('data-select-plan');$$('.plan').forEach(function(p){p.style.outline=p.getAttribute('data-plan')===selectedPlan?'2px solid var(--steel)':'none'});openModal('#flowModal');updateFlow()})});$$('#studyTabs button').forEach(function(b){b.addEventListener('click',function(){$$('#studyTabs button').forEach(function(x){x.classList.remove('active')});b.classList.add('active');renderStudies(b.getAttribute('data-study'))})});$$('#reportTabs button').forEach(function(b){b.addEventListener('click',function(){$$('#reportTabs button').forEach(function(x){x.classList.remove('active')});b.classList.add('active');var k=b.getAttribute('data-tab');if(report[k]){$('#tabTitle').textContent=report[k][0];$('#tabBody').textContent=report[k][1]}})});$$('.quad').forEach(function(q){q.addEventListener('click',function(){$$('.quad').forEach(function(x){x.classList.remove('active')});q.classList.add('active');var d=$('#matrixDetail');if(d)d.textContent=q.getAttribute('data-detail')})});$$('.faqItem button').forEach(function(b){b.addEventListener('click',function(){b.closest('.faqItem').classList.toggle('open')})});$$('.goalOptions .option').forEach(function(b){b.addEventListener('click',function(){$$('.goalOptions .option').forEach(function(x){x.classList.remove('active')});b.classList.add('active');selectedGoal=b.textContent;$('#goalStatus').textContent='Selected: '+selectedGoal})});var ph=$('#photos');if(ph)ph.addEventListener('change',function(e){var files=[].slice.call(e.target.files);uploaded=files.length>0;$('#fileList').innerHTML=files.map(function(f){return '<div>'+f.name+'</div>'}).join('');$('#fileStatus').textContent=uploaded?files.length+' file(s) selected.':'No files selected.'});var bk=$('#backStep');if(bk)bk.onclick=function(){if(step>0){step--;updateFlow()}};var nx=$('#nextStep');if(nx)nx.onclick=function(){if(step===0&&!selectedGoal){$('#goalStatus').innerHTML='<span class="error">Choose a goal first.</span>';return}if(step===1&&!uploaded){$('#fileStatus').innerHTML='<span class="error">Select at least one image for the demo flow.</span>';return}if(step===2&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test($('#email').value)){$('#prefStatus').innerHTML='<span class="error">Enter a valid email.</span>';return}if(step<3){step++;updateFlow()}};var sl=$('#sendLogin');if(sl)sl.onclick=function(){var v=$('#loginEmail').value;$('#loginStatus').textContent=/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)?'Client portal link queued for '+v:'Enter a valid email first.'};
 </script>
 </body>
 </html>

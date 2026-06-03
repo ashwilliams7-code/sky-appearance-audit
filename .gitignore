@@ -1,4 +1,5 @@
 assets/*reference*/
-assets/*media*/
+assets/folder-preview-media/
+index.folder-images-preview.html
 index.html.bak-*
 .DS_Store
