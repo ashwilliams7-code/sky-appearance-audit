@@ -1,10 +1,10 @@
-# Auri Face + Body Analysis Engine Options
+# Arii Face + Body Analysis Engine Options
 
-> **For Hermes:** Use `subagent-driven-development` if this moves from parked strategy into implementation. Treat this as the canonical repo parking doc for the Auri algorithm/engine direction.
+> **For Hermes:** Use `subagent-driven-development` if this moves from parked strategy into implementation. Treat this as the canonical repo parking doc for the Arii algorithm/engine direction.
 
-**Goal:** Define how Auri can produce a premium ~30-page private face + body appearance strategy report from user-uploaded photos.
+**Goal:** Define how Arii can produce a premium ~30-page private face + body appearance strategy report from user-uploaded photos.
 
-**Architecture:** Auri should be a multi-stage analysis pipeline, not one giant AI prompt. The engine should combine photo-quality validation, deterministic computer-vision measurements, multimodal reasoning, safety/medical guardrails, a recommendation-ranking model, and a designed report composer.
+**Architecture:** Arii should be a multi-stage analysis pipeline, not one giant AI prompt. The engine should combine photo-quality validation, deterministic computer-vision measurements, multimodal reasoning, safety/medical guardrails, a recommendation-ranking model, and a designed report composer.
 
 **Tech Stack Candidates:** MediaPipe Face Landmarker, MediaPipe Pose/BlazePose, OpenCV, segmentation models, multimodal LLMs, a metric registry, JSON report schemas, and a PDF/report renderer.
 
@@ -14,9 +14,9 @@
 
 ## 1. Product Thesis
 
-Auri is not “AI rates your face.” That positioning is shallow, risky, and easy to copy.
+Arii is not “AI rates your face.” That positioning is shallow, risky, and easy to copy.
 
-Auri should be framed as:
+Arii should be framed as:
 
 > **A private appearance strategy engine that ranks the highest-ROI improvements across face, body, posture, grooming, style, and photo presence.**
 
@@ -44,9 +44,9 @@ A QOVES-like system likely feels strong because it turns subjective appearance i
 6. Personalised recommendations.
 7. Report presentation that feels clinical and ordered.
 
-Auri should replicate the *shape* of that intelligence without claiming access to their internals.
+Arii should replicate the *shape* of that intelligence without claiming access to their internals.
 
-Auri improves on it by adding:
+Arii improves on it by adding:
 
 - body and posture analysis;
 - clothing/fit analysis;
@@ -107,7 +107,7 @@ The important engineering principle: every module should emit structured JSON wi
 
 ## 5. Module A — Capture Quality Gate
 
-This gate protects Auri from bad photos creating fake flaws.
+This gate protects Arii from bad photos creating fake flaws.
 
 ### Checks
 
@@ -144,7 +144,7 @@ This gate protects Auri from bad photos creating fake flaws.
 
 ### Investor Message
 
-Auri should visibly show this step in the product. It communicates scientific seriousness and reduces liability.
+Arii should visibly show this step in the product. It communicates scientific seriousness and reduces liability.
 
 ---
 
@@ -230,7 +230,7 @@ Auri should visibly show this step in the product. It communicates scientific se
 
 ## 7. Module C — Body + Posture Engine
 
-This is the main Auri differentiator.
+This is the main Arii differentiator.
 
 ### Candidate Extractors
 
@@ -598,7 +598,7 @@ Keep the current GitHub Pages site separate from the engine until the prototype 
 
 ## 14. Guardrails
 
-Auri must remain:
+Arii must remain:
 
 - non-medical;
 - non-diagnostic;
@@ -631,4 +631,4 @@ When we unpark this:
 7. Generate one sample 30-page report from fixture photos.
 8. Add the report preview back into the landing site.
 
-This doc is the current saved algorithm direction for Auri. The next build should start here, not from scratch.
+This doc is the current saved algorithm direction for Arii. The next build should start here, not from scratch.

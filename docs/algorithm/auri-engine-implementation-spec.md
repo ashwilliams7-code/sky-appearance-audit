@@ -1,6 +1,6 @@
-# Auri Engine Implementation Spec
+# Arii Engine Implementation Spec
 
-> **Status:** implementation-ready spec parked for the first real Auri engine prototype. Pair this with `auri-engine-architecture.md` and `auri-analysis-engine-options.md`.
+> **Status:** implementation-ready spec parked for the first real Arii engine prototype. Pair this with `auri-engine-architecture.md` and `auri-analysis-engine-options.md`.
 
 ## 1. MVP target
 
@@ -328,7 +328,7 @@ Rules:
 - Retake recommendations outrank analysis recommendations when core confidence is below threshold.
 - “Today” actions must be safe, cheap, reversible, and high-confidence.
 - Clinical/professional consult prompts are separated from the main action list.
-- Auri should recommend leaving some things alone when ROI is low.
+- Arii should recommend leaving some things alone when ROI is low.
 
 ## 5. Metric registry
 
@@ -383,7 +383,7 @@ Top-level sections:
   "roadmap": {},
   "retake_requests": [],
   "limitations": [],
-  "safety_disclaimer": "Auri is non-medical appearance guidance only."
+  "safety_disclaimer": "Arii is non-medical appearance guidance only."
 }
 ```
 
@@ -393,7 +393,7 @@ Top-level sections:
 2. Privacy and non-medical boundary.
 3. Executive summary.
 4. Photo-set quality scorecard.
-5. What Auri could and could not infer.
+5. What Arii could and could not infer.
 6. Face capture analysis.
 7. Face proportion/framing overview.
 8. Hair/framing direction.
@@ -446,7 +446,7 @@ LLM calls should be constrained.
 - transforms approved JSON findings into report prose;
 - cannot introduce new findings;
 - must include confidence qualifiers;
-- must maintain Auri tone: calm, private, practical.
+- must maintain Arii tone: calm, private, practical.
 
 ## 9. Validation and evaluation plan
 

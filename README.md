@@ -1,6 +1,6 @@
-# Auri
+# Arii
 
-Auri is a premium, non-medical appearance-intelligence landing site and intake demo covering both face and body.
+Arii is a premium, non-medical appearance-intelligence landing site and intake demo covering both face and body.
 
 ## Live site
 
@@ -8,14 +8,14 @@ https://ashwilliams7-code.github.io/sky-appearance-audit/
 
 ## Notes
 
-- Auri branding with an original public-safe visual design, copy, layout, and abstract placeholder media.
+- Arii branding with an original public-safe visual design, copy, layout, and abstract placeholder media.
 - Static GitHub Pages implementation with embedded HTML/CSS/JS.
 - Upload and login are front-end placeholders only; no files are transmitted.
 - Positioning is non-medical and avoids diagnosis, beauty scoring, or guaranteed outcomes.
 
 ## Product / algorithm docs
 
-- [Auri Face + Body Analysis Engine Options](docs/algorithm/auri-analysis-engine-options.md) — parked algorithm dive for the future QOVES-inspired face + body report engine, including pipeline options, metric families, ranking logic, and report structure.
-- [Auri Analysis Engine Architecture](docs/algorithm/auri-engine-architecture.md) — comprehensive module architecture for photo quality, face/body/posture/style analysis, confidence handling, guardrails, and build phases.
-- [Auri Engine Implementation Spec](docs/algorithm/auri-engine-implementation-spec.md) — implementation contracts, ranking pseudocode, metric registry, 30-page report composition, validation plan, and milestones.
+- [Arii Face + Body Analysis Engine Options](docs/algorithm/auri-analysis-engine-options.md) — parked algorithm dive for the future QOVES-inspired face + body report engine, including pipeline options, metric families, ranking logic, and report structure.
+- [Arii Analysis Engine Architecture](docs/algorithm/auri-engine-architecture.md) — comprehensive module architecture for photo quality, face/body/posture/style analysis, confidence handling, guardrails, and build phases.
+- [Arii Engine Implementation Spec](docs/algorithm/auri-engine-implementation-spec.md) — implementation contracts, ranking pseudocode, metric registry, 30-page report composition, validation plan, and milestones.
 - [Report JSON Schema](docs/algorithm/schemas/auri-report.schema.json) and [Module Output Example](docs/algorithm/schemas/module-output.example.json) — starter contracts for the future engine.
