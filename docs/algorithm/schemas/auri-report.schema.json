@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://auri.app/schemas/report.schema.json",
+  "title": "AuriReport",
+  "type": "object",
+  "required": [
+    "report_id",
+    "job_id",
+    "schema_version",
+    "overall_confidence",
+    "photo_quality_summary",
+    "ranked_recommendations",
+    "limitations",
+    "safety_disclaimer"
+  ],
+  "properties": {
+    "report_id": { "type": "string" },
+    "job_id": { "type": "string" },
+    "schema_version": { "type": "string" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "user_goal_summary": { "type": "string" },
+    "overall_confidence": {
+      "type": "string",
+      "enum": ["high", "moderate", "low", "needs_retake"]
+    },
+    "photo_quality_summary": {
+      "type": "object",
+      "properties": {
+        "status": { "type": "string", "enum": ["pass", "conditional", "needs_retake"] },
+        "summary": { "type": "string" },
+        "usable_modules": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "required": ["status", "summary"]
+    },
+    "executive_summary": {
+      "type": "object",
+      "properties": {
+        "headline": { "type": "string" },
+        "summary": { "type": "string" },
+        "top_levers": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "sections": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/report_section" }
+    },
+    "ranked_recommendations": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/recommendation" }
+    },
+    "roadmap": {
+      "type": "object",
+      "properties": {
+        "today": { "type": "array", "items": { "type": "string" } },
+        "seven_days": { "type": "array", "items": { "type": "string" } },
+        "thirty_days": { "type": "array", "items": { "type": "string" } },
+        "ninety_days": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "retake_requests": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/retake_request" }
+    },
+    "limitations": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "safety_disclaimer": { "type": "string" }
+  },
+  "$defs": {
+    "report_section": {
+      "type": "object",
+      "required": ["id", "title", "confidence", "body"],
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "confidence": { "type": "string", "enum": ["high", "moderate", "low", "not_available"] },
+        "body": { "type": "string" },
+        "evidence_observation_ids": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "limitations": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "recommendation": {
+      "type": "object",
+      "required": [
+        "id",
+        "category",
+        "title",
+        "priority_score",
+        "confidence",
+        "impact_estimate",
+        "effort",
+        "cost",
+        "risk",
+        "time_horizon",
+        "guardrail_level"
+      ],
+      "properties": {
+        "id": { "type": "string" },
+        "category": { "type": "string" },
+        "title": { "type": "string" },
+        "claim": { "type": "string" },
+        "evidence_observation_ids": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "priority_score": { "type": "number", "minimum": 0 },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "impact_estimate": { "type": "number", "minimum": 0, "maximum": 1 },
+        "effort": { "type": "number", "minimum": 0, "maximum": 1 },
+        "cost": { "type": "number", "minimum": 0, "maximum": 1 },
+        "risk": { "type": "number", "minimum": 0, "maximum": 1 },
+        "time_to_visible_result": { "type": "number", "minimum": 0, "maximum": 1 },
+        "time_horizon": { "type": "string", "enum": ["today", "7_days", "30_days", "90_days", "later"] },
+        "guardrail_level": { "type": "string", "enum": ["safe", "professional_consult", "not_allowed"] }
+      }
+    },
+    "retake_request": {
+      "type": "object",
+      "required": ["photo_role", "reason", "instruction"],
+      "properties": {
+        "photo_role": { "type": "string" },
+        "reason": { "type": "string" },
+        "instruction": { "type": "string" },
+        "blocks_modules": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}
