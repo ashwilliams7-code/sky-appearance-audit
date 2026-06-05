@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Aurii — Improve your face &amp; body without surgery</title>
-<meta name="description" content="Aurii gives private, doctor-informed face and body analysis and a personalised plan ranked by impact, risk and return."/>
+<title>Aurii — Pre-consultation aesthetic intelligence</title>
+<meta name="description" content="Aurii is private, non-diagnostic pre-consultation aesthetic intelligence: feature-by-feature face and body ratings, concept visuals, and a staged improvement plan before you book anything clinical."/>
 <link rel="canonical" href="https://aurii.me/"/>
 <link rel="icon" href="assets/aurii-mark.svg" type="image/svg+xml"/>
-<meta property="og:title" content="Aurii — Improve your face & body without surgery"/>
-<meta property="og:description" content="Private, doctor-informed face and body analysis with a personalised plan ranked by impact, risk and return."/>
+<meta property="og:title" content="Aurii — Pre-consultation aesthetic intelligence"/>
+<meta property="og:description" content="Private, non-diagnostic feature ratings, concept visuals, and a staged face/body plan before cosmetic consults."/>
 <meta property="og:url" content="https://aurii.me/"/>
 <meta property="og:type" content="website"/>
 <meta name="theme-color" content="#17201E"/>
@@ -207,12 +207,24 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
 .hookPanel{border:1px solid rgba(185,133,114,.28);border-radius:1.2rem;background:linear-gradient(135deg,#FFFDF8,#F7F2EA);padding:18px;margin-top:18px}.hookPanel h4{font-family:"Fraunces",serif;font-size:1.45rem;font-weight:400;margin:0 0 8px}.hookPanel p{color:var(--muted);line-height:1.55;margin:0 0 12px}.hookStats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}.hookStats div{border:1px solid var(--line);border-radius:.9rem;background:#fff;padding:12px}.hookStats small{display:block;text-transform:uppercase;letter-spacing:.12em;color:var(--teal);font-size:.62rem;font-weight:700}.hookStats b{display:block;margin-top:4px;font-size:1rem}.paymentSummary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0}.paymentSummary div{border:1px solid var(--line);border-radius:1rem;background:#fff;padding:14px}.paymentSummary small{display:block;color:var(--muted);margin-bottom:4px}.paymentSummary b{font-size:1.08rem}.secureNote{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:.92rem;line-height:1.45;margin-top:12px}.secureNote:before{content:"↳";color:var(--rosewood);font-weight:700}.flowActions{position:sticky;bottom:-1px;background:linear-gradient(180deg,rgba(255,253,248,0),#fff 24%);padding-top:18px}.status .error,.error{color:#9b3b2f;font-weight:650}.status .ok{color:#3f6f58;font-weight:650}
 @media(max-width:760px){#flowModal .intakeDialog{width:calc(100vw - 18px);max-height:calc(100svh - 18px);padding:20px}.intakeHero,.optionGrid,.optionGrid.cols3,.checkGrid,.fieldGrid,.fieldGrid.three,.intakeChecklist,.hookStats,.paymentSummary{grid-template-columns:1fr}.intakeStepMeta{align-items:flex-start;flex-direction:column}.flowActions{gap:10px}.flowActions .btn{flex:1}}
 
+/* Public pre-consultation stage ladder */
+.cols4{grid-template-columns:repeat(4,1fr)}
+.stageGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem;margin-top:2.4rem}
+.stageCard{position:relative;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:0 18px 50px rgba(23,32,30,.06)}
+.stageCard:before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:linear-gradient(90deg,var(--sage),var(--rosewood));opacity:.75}
+.stageCard small{display:inline-flex;margin-bottom:14px;text-transform:uppercase;letter-spacing:.16em;font-size:.68rem;color:var(--teal);font-weight:700}
+.stageCard h3{margin:0 0 10px;font-weight:500}
+.stageCard p{margin:0;color:var(--muted);line-height:1.55}
+.stageCard .stageLabel{display:inline-flex;margin-top:18px;padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:var(--ink);background:#F7F8F5;font-size:.78rem;font-weight:600}
+@media(max-width:980px){.cols4,.stageGrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){.cols4,.stageGrid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
 <a class="skipLink" href="#main">Skip to main content</a>
-<div class="topbar" id="bar">Aurii private beta · doctor-informed face &amp; body analysis · <b>non-surgical first</b> <button type="button" id="dismissBar">Dismiss</button></div>
-<div class="navShell"><div class="wrap"><nav><a class="brand" href="#" aria-label="Aurii home"><img class="brandLogo" src="assets/aurii-logo.svg" alt="Aurii" width="142" height="39"></a><div class="links" id="navLinks"><a href="#why">Why Aurii</a><a href="#how">How it works</a><a href="#science">Evidence</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><button type="button" class="ghost" data-open-login>Login</button></div><button type="button" class="ghost mobile" id="menuBtn" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation menu">Menu</button><button type="button" class="btn" data-open-flow>Start my plan</button></nav></div></div>
+<div class="topbar" id="bar">Aurii private beta · pre-consultation aesthetic intelligence · <b>non-diagnostic, non-surgical first</b> <button type="button" id="dismissBar">Dismiss</button></div>
+<div class="navShell"><div class="wrap"><nav><a class="brand" href="#" aria-label="Aurii home"><img class="brandLogo" src="assets/aurii-logo.svg" alt="Aurii" width="142" height="39"></a><div class="links" id="navLinks"><a href="#why">Why Aurii</a><a href="#how">How it works</a><a href="#stages">Stages</a><a href="#science">Evidence</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><button type="button" class="ghost" data-open-login>Login</button></div><button type="button" class="ghost mobile" id="menuBtn" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation menu">Menu</button><button type="button" class="btn" data-open-flow>Start my plan</button></nav></div></div>
 
 <main id="main" tabindex="-1">
 <header class="hero">
@@ -227,37 +239,37 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
   </div>
   <div class="wrap heroInner">
     <div class="heroCopy">
-      <div class="join">Private beta · face + body analysis</div>
-      <h1>The science of your face <em>and</em> body. Without surgery.</h1>
-      <p class="lead">Aurii gives you a private, doctor-informed read across your face and frame — skin, hair, grooming, photos, posture, proportions, body composition and fit. No public score, no shame spiral: just the highest-return changes ranked into a practical plan.</p>
+      <div class="join">Private beta · pre-consultation aesthetic intelligence</div>
+      <h1>Know what to improve before you book a clinic.</h1>
+      <p class="lead">Aurii gives you a private, non-diagnostic read across your face and frame — feature-by-feature ratings, photo quality checks, AI concept visualisations, and a staged plan that starts with reversible changes before any clinician conversation.</p>
       <div class="ctas">
         <button type="button" class="btn" data-open-flow>Start my plan</button>
         <a class="btn light" href="#how">How it works</a>
       </div>
       <div class="heroProofs">
-        <div class="heroProof"><b>Dozens of markers</b><span>Face &amp; body, measured</span></div>
-        <div class="heroProof"><b>Evidence-led</b><span>Doctor-informed method</span></div>
-        <div class="heroProof"><b>Private</b><span>Yours alone, always</span></div>
+        <div class="heroProof"><b>Private ratings</b><span>Feature-by-feature, never public</span></div>
+        <div class="heroProof"><b>Concept visuals</b><span>Clearly labelled, not predictions</span></div>
+        <div class="heroProof"><b>Stage 0 first</b><span>Reversible wins before consults</span></div>
       </div>
     </div>
   </div>
   <div class="heroCap">
-    <small>FACE &amp; BODY ANALYSIS</small>
+    <small>PRE-CONSULTATION REPORT</small>
     <h3>See your direction</h3>
-    <p>One private scan reads your features and physique, then maps the changes that matter most — in order.</p>
+    <p>One private report ranks what to try now, what to test with help, and what belongs in a qualified consult.</p>
   </div>
 </header>
 
 
 <section class="wrap logos">
-  <p class="logosLead">Private, evidence-led face &amp; body planning</p>
+  <p class="logosLead">Private, evidence-led pre-consultation planning</p>
   <div class="logoGrid">
-    <div class="logo">Science-led</div>
-    <div class="logo">Doctor-informed</div>
+    <div class="logo">Feature ratings</div>
+    <div class="logo">Concept visuals</div>
     <div class="logo">Face &amp; body</div>
-    <div class="logo">Personalised</div>
+    <div class="logo">Staged protocol</div>
     <div class="logo">Private</div>
-    <div class="logo">Non-surgical</div>
+    <div class="logo">Non-diagnostic</div>
   </div>
 </section>
 
@@ -265,19 +277,19 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
   <div class="head">
     <div>
       <span class="eyebrow">New approach</span>
-      <h2>Your strongest visual levers, ranked.</h2>
+      <h2>Your pre-consultation roadmap, ranked.</h2>
     </div>
-    <p>Aurii reads your face and your physique together — skin, hair and grooming alongside posture, proportion and fit — then turns that read into a calm, prioritised plan. No scores, no judgement. Just clear direction on the changes that genuinely move how you present, and the confidence that follows.</p>
+    <p>Aurii reads your face and physique together — individual features, adjacent-feature harmony, skin, hair, posture, proportion, styling and fit — then turns that read into a private staged roadmap. You get clear ratings and priorities without a public beauty score, medical diagnosis or pressure to rush into procedures.</p>
   </div>
 
   <div class="transform">
     <div class="numberList">
       <ol>
-        <li><span>1</span>Feel genuinely confident in photos — knowing your angles, lighting and grooming work in your favour.</li>
-        <li><span>2</span>Make a stronger first impression, with a face and frame that read as composed and intentional.</li>
-        <li><span>3</span>Present better where it counts — dating profiles, professional headshots and everyday introductions.</li>
-        <li><span>4</span>Get honest direction on posture, body composition and proportion, paced to your real life.</li>
-        <li><span>5</span>Avoid unnecessary procedures by understanding what styling, fit and habits can do first.</li>
+        <li><span>1</span>Understand which features, proportions and photos are helping — and which ones need better capture before any judgement.</li>
+        <li><span>2</span>See a private, feature-by-feature read across face, frame, grooming, posture and styling.</li>
+        <li><span>3</span>Use AI concept visuals as direction boards, clearly labelled as concepts — not promised outcomes.</li>
+        <li><span>4</span>Start with reversible Stage 0 changes: lighting, grooming, posture, fit, training and styling.</li>
+        <li><span>5</span>Walk into any clinician conversation later with better questions, safer expectations and less guesswork.</li>
       </ol>
     </div>
 
@@ -304,9 +316,9 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
 <section class="wrap section auriiMotionLab" id="motion-lab">
   <div class="motionLabGrid">
     <div class="motionLabCopy">
-      <span class="eyebrow">Motion style analysis</span>
-      <h2>Turn a reference video into your own visual protocol.</h2>
-      <p class="lead">Aurii is designed to read more than still photos. Add a short style reference — a walk, pose sequence, camera angle, outfit cadence or editorial clip — and the system breaks it into key frames, notes the movement language, then adapts the style to your face, frame and proportions.</p>
+      <span class="eyebrow">Video + presentation analysis</span>
+      <h2>Translate a style reference into your own protocol.</h2>
+      <p class="lead">Aurii can read more than still photos. Add a short style reference — a walk, pose sequence, camera angle, outfit cadence or editorial clip — and the report breaks it into key frames, notes the presentation language, then adapts the idea to your face, frame and proportions.</p>
 
       <div class="motionFlow" aria-label="Aurii motion analysis flow">
         <div class="motionStep active"><span>01</span><b>Reference clip</b><p>10–30 seconds of movement, posing, styling or camera direction.</p></div>
@@ -364,10 +376,10 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
 <section class="wrap section refPreview" id="media-preview">
   <div class="head">
     <div>
-      <span class="eyebrow">Aurii report preview</span>
-      <h2>See exactly what to change first.</h2>
+      <span class="eyebrow">Pre-consultation report preview</span>
+      <h2>See what to change, test and ask.</h2>
     </div>
-    <p>Aurii turns face and body signals into a private ranked protocol — what to do now, what to test, what to ignore, and when to ask a professional.</p>
+    <p>Aurii turns face and body signals into a private protocol: feature ratings, photo reliability, AI concept direction, staged actions and clear questions for qualified professionals when needed.</p>
   </div>
 
   <div class="refGrid">
@@ -375,10 +387,10 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
       <img src="assets/aurii-media/report-viewer.webp" alt="Aurii personalised report interface preview" width="1982" height="1664" loading="lazy" decoding="async">
     </div>
     <div class="refStack">
-      <div class="refShot"><img src="assets/aurii-media/biometrics.webp" alt="Biometrics and progress preview" width="480" height="320" loading="lazy" decoding="async"><span>Biometrics + progress map</span></div>
-      <div class="refShot"><img src="assets/aurii-media/affects.webp" alt="Appearance factors visual preview" width="1250" height="1099" loading="lazy" decoding="async"><span>What affects first impressions</span></div>
-      <div class="refShot"><img src="assets/aurii-media/female-after.webp" alt="Female direction preview" width="1128" height="1504" loading="lazy" decoding="async"><span>Direction image</span></div>
-      <div class="refShot"><img src="assets/aurii-media/male-after.webp" alt="Male direction preview" width="1128" height="1504" loading="lazy" decoding="async"><span>Frame direction image</span></div>
+      <div class="refShot"><img src="assets/aurii-media/biometrics.webp" alt="Biometrics and progress preview" width="480" height="320" loading="lazy" decoding="async"><span>Feature rating map</span></div>
+      <div class="refShot"><img src="assets/aurii-media/affects.webp" alt="Appearance factors visual preview" width="1250" height="1099" loading="lazy" decoding="async"><span>Appearance factors</span></div>
+      <div class="refShot"><img src="assets/aurii-media/female-after.webp" alt="Female direction preview" width="1128" height="1504" loading="lazy" decoding="async"><span>AI concept visualization</span></div>
+      <div class="refShot"><img src="assets/aurii-media/male-after.webp" alt="Male direction preview" width="1128" height="1504" loading="lazy" decoding="async"><span>Frame concept visualization</span></div>
     </div>
   </div>
 
@@ -387,16 +399,16 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
     <img src="assets/aurii-media/science.webp" alt="Evidence and science visual" width="512" height="342" loading="lazy" decoding="async">
     <img src="assets/aurii-media/personal.webp" alt="Personalised analysis visual" width="480" height="320" loading="lazy" decoding="async">
   </div>
-  <p class="refNote">Owned Aurii preview assets are used here with original Aurii copy, a calmer visual hierarchy, and product-first sections built for a private beta.</p>
+  <p class="refNote">Preview assets are illustrative. Concept visuals show a direction board for discussion, not a guaranteed outcome from products, procedures or training.</p>
 </section>
 
 <section class="wrap section science" id="science">
   <div class="head">
     <div>
       <span class="eyebrow">What the evidence says</span>
-      <h2>Appearance shapes first impressions — but it is not destiny.</h2>
+      <h2>Evidence-led, non-diagnostic, private.</h2>
     </div>
-    <p>Decades of peer-reviewed research show that how we present — face and body alike — quietly shapes first impressions, opportunity and self-perception. Aurii turns that evidence into private, practical guidance. None of this is destiny, and none of it is medical advice.</p>
+    <p>Decades of peer-reviewed research show that presentation — face and body alike — shapes first impressions and self-perception. Aurii turns that evidence into private planning while keeping clinical decisions with qualified professionals and avoiding public scores or outcome guarantees.</p>
   </div>
 
   <div class="tabs" id="studyTabs">
@@ -409,35 +421,78 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
 
   <div class="studyGrid" id="studyGrid"></div>
 
-  <p class="studyNote">Aurii summarises published findings on appearance for educational, non-clinical purposes only. For any skin, dental, hormonal or other health concern, consult a qualified professional.</p>
+  <p class="studyNote">Aurii summarises published findings for educational, non-clinical purposes only. It does not diagnose, prescribe, or publish private methodology. For skin, dental, hormonal, surgical or other health questions, consult a qualified professional.</p>
 </section>
 
 <section class="wrap section" id="how">
   <div class="head">
     <div>
       <p class="eyebrow">How it works</p>
-      <h2>Three steps to clarity.</h2>
+      <h2>Four steps before the consult.</h2>
     </div>
-    <p>A calm, private walkthrough — from the photos you upload to a ranked plan you can actually act on. Aurii reads both your face and your physique, then sequences what matters most.</p>
+    <p>A calm, private walkthrough — from photos to feature ratings, concept visuals and a staged plan. Aurii reads both your face and physique, then sequences what matters most before you spend money on the wrong thing.</p>
   </div>
 
-  <div class="wayGrid cols3">
+  <div class="wayGrid cols4">
     <div class="way">
       <p class="eyebrow">Step 01</p>
-      <h3>Upload face &amp; body photos</h3>
-      <p>Capture a few well-lit shots of your face and a full-body image in neutral clothing. Clear guidance helps you frame skin, hair and grooming alongside posture and overall proportion. Your photos stay private and encrypted.</p>
+      <h3>Upload face &amp; body evidence</h3>
+      <p>Capture well-lit face angles, smile/profile shots and full-body references. Aurii checks lens distance, light and pose so the report does not confuse camera distortion with reality.</p>
     </div>
 
     <div class="way">
       <p class="eyebrow">Step 02</p>
-      <h3>Aurii analysis</h3>
-      <p>Aurii reads facial markers — skin texture, hair, symmetry and grooming — and assesses the body across composition, posture, proportion and how clothing fits. Every observation is evidence-led and free of any public attractiveness score.</p>
+      <h3>Private feature ratings</h3>
+      <p>Aurii reads facial features, skin, hair, grooming, posture, proportion, physique and styling as relationships — with confidence notes and no public attractiveness leaderboard.</p>
     </div>
 
     <div class="way">
       <p class="eyebrow">Step 03</p>
-      <h3>Personalised, ranked protocol</h3>
-      <p>You receive a clear, ordered plan covering both face and body — what to prioritise first and why, from grooming and skincare habits to posture, training and styling. Anything clinical is flagged to consult a qualified professional.</p>
+      <h3>Concept visuals</h3>
+      <p>You see AI concept direction for the highest-return changes. These are labelled as visual planning aids, not predictions or promises from products, procedures or training.</p>
+    </div>
+
+    <div class="way">
+      <p class="eyebrow">Step 04</p>
+      <h3>Staged action plan</h3>
+      <p>Your report starts with reversible wins, then separates professional non-invasive help, clinician questions and any high-risk surgery research into later stages.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap section" id="stages">
+  <div class="head">
+    <div>
+      <span class="eyebrow">Pre-consultation stage ladder</span>
+      <h2>Non-surgical first. Clinical questions later.</h2>
+    </div>
+    <p>Aurii keeps the order sane: start with the safest, most reversible levers, then only escalate when a qualified professional should be involved. The report is a planning tool, not a diagnosis or treatment plan.</p>
+  </div>
+
+  <div class="stageGrid">
+    <div class="stageCard">
+      <small>Stage 0</small>
+      <h3>Immediate, reversible wins</h3>
+      <p>Photo capture, lighting, hair/grooming, skincare basics, posture cues, outfit fit, training emphasis and presentation habits.</p>
+      <span class="stageLabel">Do first</span>
+    </div>
+    <div class="stageCard">
+      <small>Stage 1</small>
+      <h3>Professional non-invasive help</h3>
+      <p>Barber/stylist, facialist, coach, photographer, tailor, posture or movement support — practical help without medical claims.</p>
+      <span class="stageLabel">Worth testing</span>
+    </div>
+    <div class="stageCard">
+      <small>Stage 2</small>
+      <h3>Qualified clinician discussion</h3>
+      <p>Questions for dermatology, dental, injectables or minimally invasive consults — framed neutrally and routed to licensed professionals.</p>
+      <span class="stageLabel">Ask safely</span>
+    </div>
+    <div class="stageCard">
+      <small>Stage 3</small>
+      <h3>Surgery research, if relevant</h3>
+      <p>High-risk, high-cost ideas are treated as research topics only, requiring independent clinical assessment, consent and realistic expectations.</p>
+      <span class="stageLabel">Last, not first</span>
     </div>
   </div>
 </section>
@@ -446,34 +501,34 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
   <div class="head">
     <div>
       <span class="eyebrow">Personalised analysis</span>
-      <h2>Mapped for your face and your frame.</h2>
+      <h2>Feature ratings for face, frame and context.</h2>
     </div>
-    <p>Aurii reads two complementary stories — the face above and the body below — then connects them. Every observation is private, non-medical, and framed as something you can act on, never a verdict. Where a topic crosses into skin, dental, or clinical territory, we point you to a qualified professional.</p>
+    <p>Aurii reads two complementary stories — the face above and the body below — then connects them. Each observation is private, non-diagnostic and confidence-scored in plain language: what is reliable, what is distorted by the photo, what is adjustable, and what belongs with a professional.</p>
   </div>
 
   <div class="tiles">
     <div class="tile">
       <span class="eyebrow">Face</span>
-      <h3>Facial landmarks</h3>
-      <span>Proportion and symmetry across thirds and fifths, plus skin texture, tone evenness, and how your hairline and brows frame the face. Read as ranges, never a single public score.</span>
+      <h3>Face feature ratings</h3>
+      <span>Feature relationships, proportion, symmetry, skin texture, hairline, brows, smile and framing — read privately as context, not a public score.</span>
     </div>
 
     <div class="tile">
       <span class="eyebrow">Body</span>
-      <h3>Body &amp; posture</h3>
-      <span>Overall frame and build, standing posture, shoulder line, and the proportion lines that run from neck to hip. A calm view of physique and carriage — not a weight verdict.</span>
+      <h3>Body &amp; posture ratings</h3>
+      <span>Frame, build, standing posture, shoulder line, neck-to-hip proportions, silhouette and clothing fit — framed as presentation cues, not a weight verdict.</span>
     </div>
 
     <div class="tile">
       <span class="eyebrow">Face &amp; body</span>
-      <h3>Photo capture</h3>
-      <span>Guided capture for both portraits and full-length shots: lens distance, lighting direction, and camera angle are checked so the face and the frame are measured fairly, not flattered or distorted.</span>
+      <h3>Photo confidence gate</h3>
+      <span>Lens distance, lighting, facial tension, pose and camera angle are checked first, so Aurii can distinguish real signal from bad capture.</span>
     </div>
 
     <div class="tile">
       <span class="eyebrow">Body &amp; face</span>
-      <h3>Styling &amp; fit</h3>
-      <span>Wardrobe cut and fit mapped to your frame and proportions, alongside grooming and hair notes for the face. Practical, reversible steps that flatter how you are actually built.</span>
+      <h3>Concept visuals &amp; consult questions</h3>
+      <span>Direction images, styling boards and consult prompts are separated clearly: visual concepts are not predictions, and clinical topics go to qualified professionals.</span>
     </div>
   </div>
 </section>
@@ -481,8 +536,8 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
 <section class="wrap section" id="analysis">
   <div class="head">
     <span class="eyebrow">Personalised analysis</span>
-    <h2>160+ things we read — across face and body.</h2>
-    <p>Aurii studies your appearance the way a thoughtful eye would, only more patiently. Across six dimensions spanning face and body, we map hundreds of small signals — texture, light, line, balance and fit — and translate them into clear, private observations. No scores, no judgement; just a considered reading of where small, realistic adjustments could help you look more like yourself on a good day.</p>
+    <h2>Feature-by-feature ratings — without a public score.</h2>
+    <p>Aurii studies your appearance the way a thoughtful consultant would, only more consistently. Across face and body, we map visible signals — texture, light, line, proportion, harmony, posture and fit — then translate them into private ratings, confidence notes and staged next steps. The exact scoring method stays proprietary; the user sees clear, kind direction.</p>
   </div>
 
   <div class="analysisGrid">
@@ -508,8 +563,8 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
           <circle cx="12" cy="12" r="8.5"/>
         </svg>
       </span>
-      <h3>Facial proportion &amp; symmetry</h3>
-      <p>The quiet geometry of your features — spacing, thirds and balance — read as relationships, never as a verdict.</p>
+      <h3>Feature balance &amp; harmony</h3>
+      <p>The relationships between features — spacing, thirds, symmetry, adjacent-feature fit and overall harmony — read as context, never as a verdict.</p>
       <span class="tag">41 markers</span>
     </div>
 
@@ -552,7 +607,7 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
         </svg>
       </span>
       <h3>Body composition &amp; proportion</h3>
-      <p>General build and proportion across the frame — observed gently, to guide realistic, sustainable goals.</p>
+      <p>General build and proportion across the frame — observed gently, to guide realistic, sustainable goals without diagnosing health or judging weight.</p>
       <span class="tag">19 markers</span>
     </div>
 
@@ -576,16 +631,16 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
   <div class="head">
     <div>
       <span class="eyebrow">A better method</span>
-      <h2>A new way to glow up.</h2>
+      <h2>A new way to prepare before procedures.</h2>
     </div>
-    <p>Most appearance journeys start with a single fixation and a quick fix. Aurii starts with a calm, full-picture read of your face <em>and</em> your body — then maps a reversible, realistic path from where you are to where you could be.</p>
+    <p>Most appearance journeys start with one fixation and a quick fix. Aurii starts with a calm, full-picture read of your face <em>and</em> body — then maps a reversible, realistic path before any cosmetic consult or major spend.</p>
   </div>
 
   <div class="wayGrid">
     <div class="way">
       <h3>The old way</h3>
       <div class="step"><small>Step 1</small><b>Fixate on a single feature — a nose, a jawline — and judge everything else against it.</b></div>
-      <div class="step"><small>Step 2</small><b>Book a clinic or procedure far too early, before understanding what actually drives the look.</b></div>
+      <div class="step"><small>Step 2</small><b>Jump to injectables, surgery or expensive products before understanding what actually drives the look.</b></div>
       <div class="step"><small>Step 3</small><b>No real assessment of skin, hair, grooming, posture or proportion — just guesswork.</b></div>
       <div class="step"><small>Step 4</small><b>Treat the face in isolation and ignore the body, posture and how clothes fit.</b></div>
       <div class="step"><small>Step 5</small><b>Spiral into an insecurity loop — comparison, doubt, more spending, no clear direction.</b></div>
@@ -593,20 +648,20 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
 
     <div class="way dark">
       <h3>The Aurii way</h3>
-      <div class="step"><small>Step 1</small><b>Assess the face and body together — skin, hair, grooming, posture, composition, proportion and fit.</b></div>
-      <div class="step"><small>Step 2</small><b>Run a private Aurii analysis from your own photos — calm, clinical, non-judgemental.</b></div>
-      <div class="step"><small>Step 3</small><b>See your optimised direction: what to prioritise first, and what genuinely moves the needle.</b></div>
-      <div class="step"><small>Step 4</small><b>Follow a reversible protocol across skin, hair, posture, training and how you dress — no irreversible steps.</b></div>
-      <div class="step"><small>Step 5</small><b>Set realistic expectations and consult qualified professionals for anything clinical along the way.</b></div>
+      <div class="step"><small>Step 1</small><b>Assess the face and body together — features, skin, hair, grooming, posture, composition, proportion and fit.</b></div>
+      <div class="step"><small>Step 2</small><b>Run a private, non-diagnostic Aurii read from your own photos with confidence notes and photo-quality checks.</b></div>
+      <div class="step"><small>Step 3</small><b>See concept visuals and a staged roadmap: Stage 0 habits first, professional help second, clinician questions third.</b></div>
+      <div class="step"><small>Step 4</small><b>Use the report to avoid unnecessary procedures and prepare better if you do speak with a provider.</b></div>
+      <div class="step"><small>Step 5</small><b>Keep expectations realistic: Aurii can educate and organise, but clinicians decide diagnosis, treatment and consent.</b></div>
     </div>
   </div>
 </section>
 
 <section class="wrap section" id="timeline">
   <div class="head">
-    <span class="eyebrow">Your journey</span>
-    <h2>A plan that evolves with you.</h2>
-    <p>Nothing here is one-and-done. We reassess every year, keep a private record of how things change over time, and always lead with the reversible, low-commitment moves first — so face and body progress feels considered, never rushed.</p>
+    <span class="eyebrow">Your pre-consultation journey</span>
+    <h2>A staged plan that evolves with you.</h2>
+    <p>Nothing here is one-and-done. Aurii keeps a private record of what changed, what was tested and what still needs a professional opinion — always leading with reversible, low-commitment moves first.</p>
   </div>
 
   <ol class="timeline" role="list">
@@ -619,7 +674,7 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
         </svg>
       </span>
       <h3>Day 1 — Capture &amp; analysis</h3>
-      <p>A few well-lit photos establish your starting point — facial features, skin and hair condition, posture and overall proportion — read calmly, with no scores.</p>
+      <p>A few well-lit photos establish your starting point — facial features, skin and hair condition, posture and overall proportion — read calmly, with no public score.</p>
     </li>
 
     <li class="tl-step">
@@ -761,16 +816,16 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
 <section class="wrap section" id="doctors">
   <div class="head">
     <div>
-      <span class="eyebrow">Doctor-informed guardrails</span>
-      <h2>Recommendations with medical boundaries.</h2>
+      <span class="eyebrow">Clinician-aware guardrails</span>
+      <h2>Aesthetic planning with medical boundaries.</h2>
     </div>
-    <p>Aurii can recommend, prioritise and sequence changes across your face and your physique — but it does not diagnose, prescribe, or stand in for a clinician. When a question touches your skin, teeth, general health or a training injury, Aurii pauses and prompts you to consult a qualified professional.</p>
+    <p>Aurii can organise, prioritise and sequence appearance options across your face and physique — but it does not diagnose, prescribe, perform risk assessment, or stand in for a clinician. When a topic touches skin health, teeth, injectables, surgery, injury or general health, Aurii turns it into questions for a qualified professional.</p>
   </div>
 
   <div class="doctor">
     <div class="quote">
       <h3>Advisory review layer</h3>
-      <p>"The most reliable gains — for both face and body — usually come from reversible, evidence-informed habits: light, sleep, grooming, posture, fit and consistent movement. We surface those first, and only point toward clinical or cosmetic intervention once the simple, low-risk work has been given a fair chance."</p>
+      <p>"The safest pre-consult pathway starts with reversible, evidence-informed changes: light, sleep, grooming, posture, fit, movement and photo capture. Aurii surfaces those first, then separates professional non-invasive support from any medical or cosmetic questions that require a qualified clinician."</p>
       <small>General educational framing only. Aurii is non-medical and routes clinical questions to qualified professionals.</small>
     </div>
 
@@ -784,8 +839,8 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
         <p>Smile, alignment and shade observations are cosmetic context only. For whitening, orthodontics or anything structural, Aurii directs you to a registered dentist or orthodontist.</p>
       </div>
       <div class="tile">
-        <h3>Cosmetic safety</h3>
-        <p>Where face or body goals might lead toward procedures, Aurii frames options neutrally, never guarantees outcomes, and recommends an accredited practitioner for consultation and consent.</p>
+        <h3>Cosmetic consult safety</h3>
+        <p>Where goals might lead toward injectables, minimally invasive options or surgery, Aurii frames neutral questions, never guarantees outcomes, and points users toward accredited practitioners for consultation, consent and risk discussion.</p>
       </div>
       <div class="tile">
         <h3>Movement &amp; training safety</h3>
@@ -799,9 +854,9 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
   <div class="head">
     <div>
       <span class="eyebrow">Sample report</span>
-      <h2>Your personalised Aurii protocol.</h2>
+      <h2>Your private pre-consultation protocol.</h2>
     </div>
-    <p>A single, calm document that maps your face and your physique into one prioritised plan. Skin, hair, grooming and capture sit alongside posture, proportion, body composition and fit — sorted by what actually moves the needle, and what to leave alone.</p>
+    <p>A single, calm document that maps your face and physique into feature ratings, photo reliability notes, AI concept direction and a staged plan. Skin, hair, grooming and capture sit alongside posture, proportion, body composition and fit — sorted by what to do first, what to test and what to ask a professional.</p>
   </div>
 
   <div class="report">
@@ -810,49 +865,49 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
       <div class="reportTabs" id="reportTabs">
         <button type="button" class="active" data-tab="summary">Summary</button>
         <button type="button" data-tab="capture">Capture</button>
-        <button type="button" data-tab="face">Face</button>
-        <button type="button" data-tab="body">Frame</button>
+        <button type="button" data-tab="face">Ratings</button>
+        <button type="button" data-tab="body">Concepts</button>
         <button type="button" data-tab="motion">Motion</button>
-        <button type="button" data-tab="plan">30-Day Protocol</button>
+        <button type="button" data-tab="plan">Staged Plan</button>
       </div>
       <div class="reportBody">
         <h3 id="tabTitle">Executive summary</h3>
-        <p id="tabBody">Your strongest gains are in controllables — lighting and camera distance for the face, and posture and frame for the body. We have flagged a few skin and grooming items as high-impact and worth testing, and noted one area to raise with a qualified professional. Nothing here is a diagnosis or a guarantee; it is a prioritised, evidence-led starting point.</p>
+        <p id="tabBody">Your strongest gains are in controllables — lighting and camera distance for the face, and posture and frame for the body. Aurii summarises private feature ratings, labels concept visuals as planning aids, and turns clinical topics into consult questions. Nothing here is a diagnosis or a guarantee; it is a prioritised, evidence-led starting point.</p>
         <div class="rows">
-          <div class="row"><span>Camera distance &amp; lighting</span><b>Do first</b></div>
-          <div class="row"><span>Hair, skin &amp; grooming</span><b>High impact</b></div>
-          <div class="row"><span>Posture &amp; frame</span><b>Do first</b></div>
-          <div class="row"><span>Clinic procedures</span><b>Optional later</b></div>
+          <div class="row"><span>Feature ratings</span><b>Private report</b></div>
+          <div class="row"><span>Stage 0 quick wins</span><b>Do first</b></div>
+          <div class="row"><span>Concept visuals</span><b>Planning aid</b></div>
+          <div class="row"><span>Clinician questions</span><b>Optional later</b></div>
         </div>
       </div>
     </div>
 
     <div>
-      <h3>Aurii Priority Matrix</h3>
-      <p style="color:var(--muted)">Click each quadrant.</p>
+      <h3>Aurii Stage Ladder</h3>
+      <p style="color:var(--muted)">Click each stage.</p>
       <div class="matrix">
-        <button type="button" class="quad active" data-detail="The fastest, lowest-risk wins. For your face: soften overhead lighting, shoot at eye level from roughly an arm and a half away, and keep grooming consistent. For your body: train posture, set your shoulders and pelvis neutral, and dress to your true proportions. Free, reversible, and visible within days.">
-          <small>01</small>
+        <button type="button" class="quad active" data-detail="Stage 0 is the fastest, lowest-risk layer: capture quality, lighting, grooming, posture, styling, sleep, skincare basics and fit. These are reversible, measurable and usually worth doing before any consult.">
+          <small>00</small>
           <h3>Do first</h3>
-          <p>High impact, low risk — lighting, posture, grooming</p>
+          <p>High impact, low risk — capture, posture, grooming, fit</p>
         </button>
-        <button type="button" class="quad" data-detail="Promising but individual — give each a fair trial and judge from your own photos. Face: a simple, fragrance-light skincare routine and hair length or shape tweaks. Body: a progressive strength and conditioning block, and refining fit through alterations. Keep what measurably helps, drop what does not.">
-          <small>02</small>
+        <button type="button" class="quad" data-detail="Stage 1 is professional but non-invasive: barber/stylist, photographer, tailor, coach, facialist or posture/movement support. Test what helps before escalating to medical options.">
+          <small>01</small>
           <h3>Worth testing</h3>
-          <p>Skincare, training, fit</p>
+          <p>Stylist, tailor, coach, facialist, photographer</p>
         </button>
-        <button type="button" class="quad" data-detail="Anything clinical sits with the experts. Persistent skin concerns, dental questions, medical issues or injury and mobility limits should be discussed with a qualified dermatologist, dentist, doctor or physiotherapist. Aurii frames these as questions to bring to a professional — never as diagnoses or treatment plans.">
+        <button type="button" class="quad" data-detail="Stage 2 belongs with qualified clinicians. Dermatology, dental, injectables and minimally invasive questions are framed as discussion prompts — never automated recommendations, diagnoses or treatment plans.">
+          <small>02</small>
+          <h3>Ask a clinician</h3>
+          <p>Derm, dental, injectables, medical questions</p>
+        </button>
+        <button type="button" class="quad" data-detail="Stage 3 is last: surgery research only where relevant, with independent clinical assessment, consent, cost/risk awareness and realistic expectations. Aurii keeps it separate from low-risk appearance planning.">
           <small>03</small>
-          <h3>Ask a professional</h3>
-          <p>Derm, dental, medical, injury</p>
-        </button>
-        <button type="button" class="quad" data-detail="The low-yield rabbit holes. Millimetre features you cannot change without disproportionate cost or risk, and the forum nitpicks that quietly erode confidence. We name these so you can stop spending attention on them and redirect it to the changes that genuinely show.">
-          <small>04</small>
-          <h3>Ignore</h3>
-          <p>Internet nitpicks</p>
+          <h3>Research carefully</h3>
+          <p>Surgery topics only after safer stages</p>
         </button>
       </div>
-      <p id="matrixDetail" class="status">The fastest, lowest-risk wins. For your face: soften overhead lighting, shoot at eye level from roughly an arm and a half away, and keep grooming consistent. For your body: train posture, set your shoulders and pelvis neutral, and dress to your true proportions. Free, reversible, and visible within days.</p>
+      <p id="matrixDetail" class="status">Stage 0 is the fastest, lowest-risk layer: capture quality, lighting, grooming, posture, styling, sleep, skincare basics and fit. These are reversible, measurable and usually worth doing before any consult.</p>
     </div>
   </div>
 </section>
@@ -860,20 +915,20 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
 <section class="wrap section" id="results">
   <div class="head">
     <div>
-      <span class="eyebrow">Visual direction gallery</span>
-      <h2>Private progress, shown clearly.</h2>
+      <span class="eyebrow">AI concept visualization</span>
+      <h2>Concept images, not predictions.</h2>
     </div>
-    <p>Use the same split-view language throughout the page: baseline on the left, direction on the right, with copy focused on practical levers rather than public scores or guarantees.</p>
+    <p>Aurii can show a private direction board beside the baseline: softer lighting, better framing, grooming, posture, styling and proportion cues. These visuals are planning concepts only — never a promised medical, cosmetic or training outcome.</p>
   </div>
 
   <div class="resultGallery">
-    <div class="resultPair"><img src="assets/aurii-media/result-1-before.webp" alt="Baseline preview 1" width="656" height="813" loading="lazy" decoding="async"><img src="assets/aurii-media/result-1-after.webp" alt="Direction preview 1" width="656" height="813" loading="lazy" decoding="async"><span>Lighting + skin clarity</span></div>
-    <div class="resultPair"><img src="assets/aurii-media/result-2-before.webp" alt="Baseline preview 2" width="800" height="1103" loading="lazy" decoding="async"><img src="assets/aurii-media/result-2-after.webp" alt="Direction preview 2" width="800" height="1102" loading="lazy" decoding="async"><span>Grooming + framing</span></div>
-    <div class="resultPair"><img src="assets/aurii-media/result-4-before.webp" alt="Baseline preview 3" width="656" height="812" loading="lazy" decoding="async"><img src="assets/aurii-media/result-4-after.webp" alt="Direction preview 3" width="656" height="812" loading="lazy" decoding="async"><span>Posture + presentation</span></div>
+    <div class="resultPair"><img src="assets/aurii-media/result-1-before.webp" alt="Baseline preview 1" width="656" height="813" loading="lazy" decoding="async"><img src="assets/aurii-media/result-1-after.webp" alt="Direction preview 1" width="656" height="813" loading="lazy" decoding="async"><span>Lighting + skin concept</span></div>
+    <div class="resultPair"><img src="assets/aurii-media/result-2-before.webp" alt="Baseline preview 2" width="800" height="1103" loading="lazy" decoding="async"><img src="assets/aurii-media/result-2-after.webp" alt="Direction preview 2" width="800" height="1102" loading="lazy" decoding="async"><span>Grooming + feature framing</span></div>
+    <div class="resultPair"><img src="assets/aurii-media/result-4-before.webp" alt="Baseline preview 3" width="656" height="812" loading="lazy" decoding="async"><img src="assets/aurii-media/result-4-after.webp" alt="Direction preview 3" width="656" height="812" loading="lazy" decoding="async"><span>Posture + silhouette concept</span></div>
     <div class="resultPair"><img src="assets/aurii-media/result-7-before.webp" alt="Baseline preview 4" width="656" height="812" loading="lazy" decoding="async"><img src="assets/aurii-media/result-7-after.webp" alt="Direction preview 4" width="656" height="812" loading="lazy" decoding="async"><span>Photo capture direction</span></div>
   </div>
 
-  <p class="results-note">Visual previews are for product demonstration only. Aurii is private, non-medical appearance intelligence — no diagnosis, prescription, attractiveness score, or guaranteed outcome.</p>
+  <p class="results-note">Visual previews are illustrative product demonstrations only. They may be digitally generated, do not depict guaranteed outcomes, and are not a substitute for qualified clinical advice.</p>
 </section>
 
 <section class="wrap section" id="pricing">
@@ -882,7 +937,7 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
       <p class="eyebrow">Pricing</p>
       <h2>Choose your level of clarity.</h2>
     </div>
-    <p>Aurii is in private beta. The entry point starts at $99, with deeper analysis and concierge-style guidance priced higher as we open to a wider group. Every tier reads the whole picture &mdash; face and body together &mdash; never a single score, never a verdict.</p>
+    <p>Aurii is in private beta. The entry point starts at $99, with deeper pre-consultation reports and concierge-style guidance priced higher as we open to a wider group. Every tier reads the whole picture &mdash; face and body together &mdash; with private feature ratings, staged next steps and non-diagnostic boundaries.</p>
   </div>
 
   <div class="membershipVisual"><img src="assets/aurii-media/membership-card.webp" alt="Aurii membership card preview" width="859" height="500" loading="lazy" decoding="async"></div>
@@ -892,10 +947,10 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
       <h3>Snapshot</h3>
       <div class="price">$99</div>
       <ul>
-        <li>A focused face and body read covering proportion, balance and first impressions</li>
-        <li>Skin, hair and grooming notes for the face, plus posture and silhouette cues for the body</li>
-        <li>Photo and capture direction so your face and full-body shots are read accurately</li>
-        <li>Three clear, kind priorities to act on first</li>
+        <li>A focused pre-consultation read across face, frame, photos and first impressions</li>
+        <li>Private feature ratings for skin, hair, grooming, posture, silhouette and styling cues</li>
+        <li>Photo confidence notes so bad capture does not become bad advice</li>
+        <li>Three Stage 0 priorities to act on before spending more</li>
       </ul>
       <button type="button" class="btn light" data-select-plan="Snapshot">Start with Snapshot</button>
     </div>
@@ -905,10 +960,10 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
       <h3>Full Aurii Plan</h3>
       <div class="price">$350</div>
       <ul>
-        <li>Complete face <em>and</em> body report with detailed proportion, composition and styling analysis</li>
-        <li>Physique direction &mdash; posture, training and body-composition emphasis &mdash; alongside skin, hair and grooming guidance</li>
-        <li>Wardrobe, fit and styling recommendations that flatter your build, framing the face</li>
-        <li>A sequenced plan with photo direction and progress check-ins over time</li>
+        <li>Complete face <em>and</em> body report with feature scorecards, confidence notes and staged priorities</li>
+        <li>AI concept visuals labelled as planning aids, plus practical direction for skin, hair, grooming, posture and styling</li>
+        <li>Photo, wardrobe, fit and presentation recommendations that suit your actual frame</li>
+        <li>Consult-question packet for any dermatology, dental, injectable or procedure-adjacent topics</li>
       </ul>
       <button type="button" class="btn green" data-select-plan="Full Aurii Plan">Choose Full Aurii</button>
     </div>
@@ -919,8 +974,8 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
       <ul>
         <li>Everything in Full Aurii, revisited as your face and physique evolve</li>
         <li>One-to-one guidance pairing grooming, skin and hair with posture, fitness and proportion goals</li>
-        <li>Tailored styling, fit and photo direction for both face and full-body presence</li>
-        <li>Referrals to qualified professionals whenever a topic is clinical or medical</li>
+        <li>Tailored styling, fit, photo and concept-visual direction for both face and full-body presence</li>
+        <li>Provider-ready questions and referrals to qualified professionals whenever a topic is clinical or medical</li>
       </ul>
       <button type="button" class="btn light" data-select-plan="Concierge">Apply for Concierge</button>
     </div>
@@ -931,23 +986,23 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
   <div class="head">
     <div>
       <span class="eyebrow">FAQ</span>
-      <h2>Clear, private, kind.</h2>
+      <h2>Clear, private, clinically bounded.</h2>
     </div>
-    <p>Honest answers about what Aurii is, what it looks at, and how your face and body data stay yours. Non-medical, non-judgemental, evidence-led.</p>
+    <p>Honest answers about what Aurii is, what it looks at, how concept visuals should be understood, and how your face and body data stay yours. Non-medical, non-judgemental, evidence-led.</p>
   </div>
 
   <div class="faqList">
     <div class="faqItem open">
       <button type="button" aria-expanded="true" aria-controls="faq-medical">Is this medical advice?<span>+</span></button>
       <div class="faqContent" id="faq-medical">
-        <p>No. Aurii is a private appearance-intelligence tool, not a medical service. We don't diagnose conditions, prescribe treatments, or replace a clinician. Everything we share — across both your face (skin, hair, grooming) and your body (posture, composition, proportion, fit) — is informational and framed to help you understand your options. Where a topic is genuinely clinical, dental, or dermatological, Aurii will say so and encourage you to consult a qualified professional.</p>
+        <p>No. Aurii is a private pre-consultation appearance-intelligence tool, not a medical service. We don't diagnose conditions, prescribe treatments, assess surgical suitability, or replace a clinician. Everything we share — across both your face and body — is informational and framed to help you understand options and questions. Clinical, dental, dermatological, injectable or surgical topics are routed to qualified professionals.</p>
       </div>
     </div>
 
     <div class="faqItem">
       <button type="button" aria-expanded="false" aria-controls="faq-score">Is this a beauty score?<span>+</span></button>
       <div class="faqContent" id="faq-score">
-        <p>No. There's no public attractiveness rating and no leaderboard. Aurii is built around your own goals, not a single number that ranks you against others. Instead of a verdict, you get a calm, structured read of specifics — what's working, what's adjustable, and where small changes tend to make the most difference, for your face and your physique alike.</p>
+        <p>No. Aurii can give private feature ratings and priorities inside your report, but there is no public attractiveness rating, leaderboard or verdict. The goal is to show what is reliable, what is adjustable, and where small changes tend to make the most difference for your face and physique.</p>
       </div>
     </div>
 
@@ -961,7 +1016,14 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
     <div class="faqItem">
       <button type="button" aria-expanded="false" aria-controls="faq-surgery">Will Aurii recommend surgery?<span>+</span></button>
       <div class="faqContent" id="faq-surgery">
-        <p>Non-surgical first, always. Aurii leads with the things within your control — grooming, skin care routines, training and posture, styling and fit, and how you present in photos. These cover the vast majority of what people want to improve, for face and body. If you ever want to explore a clinical or surgical route, that's a conversation for a qualified professional, not an automated recommendation from us.</p>
+        <p>Aurii is non-surgical first, always. It leads with Stage 0 changes within your control — grooming, skin care routines, training and posture, styling and fit, and how you present in photos. If a goal might lead toward injectables, minimally invasive care or surgery, Aurii frames neutral questions for a qualified professional rather than making an automated recommendation.</p>
+      </div>
+    </div>
+
+    <div class="faqItem">
+      <button type="button" aria-expanded="false" aria-controls="faq-concepts">Are the concept visuals predictions?<span>+</span></button>
+      <div class="faqContent" id="faq-concepts">
+        <p>No. Concept visuals are private planning aids — direction boards for lighting, grooming, styling, posture and possible discussion points. They are not guarantees, medical simulations, surgical forecasts or promises that any product, treatment or procedure will create a specific result.</p>
       </div>
     </div>
 
@@ -978,9 +1040,9 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
   <div class="head">
     <div>
       <div class="eyebrow">Insights</div>
-      <h2>The science, in the open.</h2>
+      <h2>The evidence, in the open.</h2>
     </div>
-    <p>We publish how Aurii thinks — the evidence behind every read on face and body, written plainly. No hype, no scores, no claims we can't support. Just the working we'd want to see ourselves.</p>
+    <p>We publish plain-language evidence behind appearance planning — capture quality, face/body presentation, posture, grooming and styling — without exposing private methodology or making claims we can't support.</p>
   </div>
 
   <div class="tabs insightsTabs">
@@ -1028,14 +1090,14 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
     <div class="head">
       <div>
         <span class="eyebrow">Aurii for clinics</span>
-        <h2>Bring Aurii into your practice.</h2>
+        <h2>Use Aurii as a pre-consultation layer.</h2>
       </div>
-      <p>Structured face and body analysis to support your consultations — clear, organised observations across skin, hair, grooming, posture, proportion and styling that give you and your clients a shared starting point. Aurii is a non-diagnostic intelligence tool: it informs the conversation, it never replaces your professional judgement.</p>
+      <p>Structured face and body reports to support consultations — organised observations, feature ratings, concept direction and client questions across skin, hair, grooming, posture, proportion and styling. Aurii is non-diagnostic: it informs the conversation, it never replaces professional judgement.</p>
     </div>
     <div class="clinicFoot">
       <div class="clinicStat">
         <span class="clinicStatNum">100+</span>
-        <span class="clinicStatLabel">analysis points across face &amp; body</span>
+        <span class="clinicStatLabel">face, frame &amp; context signals</span>
       </div>
       <button type="button" class="btn light" data-open-flow>Apply now</button>
     </div>
@@ -1044,8 +1106,8 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
 
 <div class="final"><div class="wrap">
   <span class="eyebrow">Your next step</span>
-  <h2>Know what to change first.</h2>
-  <p>A private, doctor-informed plan for your face and your body &mdash; skin, hair, grooming and capture alongside posture, proportion, composition and fit. We turn vague insecurity into a calm, ordered list of what actually moves the needle, and what to leave alone. No score, no judgement, no diagnosis &mdash; just clear next steps you can start this week.</p>
+  <h2>Know what to try before you book anything.</h2>
+  <p>A private pre-consultation report for your face and body &mdash; feature ratings, concept visuals, skin, hair, grooming and capture alongside posture, proportion, composition and fit. We turn vague insecurity into a calm staged plan: what to do now, what to test with help, and what to ask a qualified professional. No public score, no diagnosis, no guarantees.</p>
   <div class="finalCta">
     <button type="button" class="btn light" data-open-flow>Start my plan</button>
     <a class="btn green" href="#sample">See sample report</a>
@@ -1059,7 +1121,7 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
     <div class="footGrid">
       <div>
         <a class="footerBrand" href="#" aria-label="Aurii home"><img class="footerLogo" src="assets/aurii-logo.svg" alt="Aurii" width="132" height="36"></a>
-        <p style="margin:10px 0 0;max-width:30ch;line-height:1.5">Private, non-medical appearance intelligence for face and body — clear, evidence-led guidance on skin, hair, grooming, posture and styling, on your terms.</p>
+        <p style="margin:10px 0 0;max-width:30ch;line-height:1.5">Private, non-diagnostic pre-consultation aesthetic intelligence for face and body — feature ratings, concept visuals and staged guidance, on your terms.</p>
       </div>
       <div>
         <b>Company</b>
@@ -1082,7 +1144,7 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
         <a href="#results">Visual gallery</a>
       </div>
     </div>
-    <p class="footNote">Imagery throughout is illustrative and may be digitally generated; it does not depict outcomes. Individual results vary. Aurii provides general, non-medical appearance guidance only and is not a medical service — it does not diagnose, treat, or prescribe. © 2026 Aurii. All rights reserved.</p>
+    <p class="footNote">Imagery throughout is illustrative and may be digitally generated; it does not depict outcomes. Concept visuals are planning aids only, not predictions or guarantees. Aurii provides general, non-medical appearance guidance and is not a medical service — it does not diagnose, treat, prescribe or assess clinical suitability. © 2026 Aurii. All rights reserved.</p>
   </div>
 </footer><button type="button" class="btn mobileCta" data-open-flow>Start my plan</button>
 <div class="modal" id="flowModal" role="dialog" aria-modal="true" aria-labelledby="flowModalTitle" aria-hidden="true">
@@ -1091,8 +1153,8 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
     <div class="intakeHero">
       <div>
         <div class="eyebrow">Aurii private intake</div>
-        <h3 id="flowModalTitle">Build your appearance brief.</h3>
-        <p>Answer the same questions a high-touch consultant would ask before reading your face, frame, photos, grooming, style and priorities. At the end, your personalised brief is ready to unlock with payment.</p>
+        <h3 id="flowModalTitle">Build your pre-consultation brief.</h3>
+        <p>Answer the questions a high-touch aesthetic consultant would ask before reading your face, frame, photos, grooming, style, boundaries and priorities. At the end, your private brief is ready to unlock with payment.</p>
       </div>
       <aside class="intakePlanCard" aria-live="polite">
         <small>Selected analysis</small>
@@ -1103,20 +1165,20 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
     </div>
     <div class="intakeStepMeta">
       <span id="intakeStepLabel">Step 1 of 7</span>
-      <span id="intakePayHint">Your answers become the brief customers feel invested in.</span>
+      <span id="intakePayHint">Your answers shape the private brief before checkout.</span>
     </div>
     <div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
 
     <div class="flowStep active" data-step="0">
-      <h3>What are you trying to change?</h3>
-      <p>Start with the outcome. Aurii uses this to frame the whole report around the situations that matter most.</p>
+      <h3>What do you want clarity on before you spend?</h3>
+      <p>Start with the outcome. Aurii uses this to frame the report around the situations, boundaries and consult questions that matter most.</p>
       <div class="options goalOptions optionGrid cols3">
         <button type="button" class="option" data-autofocus><b>Dating &amp; profile photos</b><span>Better photos, sharper first impression, more confidence.</span></button>
         <button type="button" class="option"><b>Full face &amp; body glow-up</b><span>Rank the highest-return changes across face, physique and style.</span></button>
         <button type="button" class="option"><b>Professional presence</b><span>Headshots, grooming, posture and polish for work contexts.</span></button>
         <button type="button" class="option"><b>Skin, hair &amp; grooming</b><span>Routine, cut, facial hair, clarity and visible maintenance.</span></button>
         <button type="button" class="option"><b>Physique &amp; styling</b><span>Posture, proportions, training emphasis, fit and silhouette.</span></button>
-        <button type="button" class="option"><b>Consult clarity</b><span>Separate reversible wins from topics to ask a professional.</span></button>
+        <button type="button" class="option"><b>Pre-consult clarity</b><span>Separate reversible wins, professional support and clinician questions.</span></button>
       </div>
       <p class="status" id="goalStatus" aria-live="polite"></p>
     </div>
@@ -1171,7 +1233,7 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
 
     <div class="flowStep" data-step="4">
       <h3>Upload the evidence set</h3>
-      <p>The funnel asks for enough detail that the customer feels the analysis is already being built. Demo files stay local until secure upload is connected.</p>
+      <p>The intake asks for enough detail to build a reliable report. Demo files stay local until secure upload is connected.</p>
       <label class="drop" for="photos" role="button" tabindex="0" aria-controls="photos" aria-describedby="fileStatus"><b>Choose face, body and optional video references</b><br><span>Recommended: front face, smile, profile, 45°, full-body front, full-body side, plus a 10–30 sec movement/style clip.</span></label>
       <input id="photos" type="file" accept="image/*,video/mp4,video/quicktime,video/webm" multiple class="hidden" tabindex="-1">
       <div class="files" id="fileList"></div>
@@ -1197,15 +1259,15 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
     </div>
 
     <div class="flowStep" data-step="6">
-      <h3>Your brief is ready to unlock</h3>
-      <p>The hook: after they have invested effort, show the plan summary and move them into checkout.</p>
+      <h3>Your private brief is ready to unlock</h3>
+      <p>After the intake is complete, Aurii shows the plan summary and moves into secure checkout.</p>
       <div class="fieldGrid">
         <div class="field"><label for="email">Email for report handoff</label><input id="email" type="email" placeholder="you@example.com" autocomplete="email"></div>
         <div class="field"><label for="phone">Phone / WhatsApp optional</label><input id="phone" type="tel" placeholder="Optional" autocomplete="tel"><div class="fieldHelp">Useful for concierge-style follow-up. Optional.</div></div>
       </div>
       <div class="hookPanel">
         <h4>We have enough to build your private Aurii brief.</h4>
-        <p>Next step: secure payment unlocks the analysis queue, report handoff and personalised protocol.</p>
+        <p>Next step: secure payment unlocks the analysis queue, report handoff, concept visuals and staged protocol.</p>
         <div class="paymentSummary">
           <div><small>Plan</small><b id="summaryPlan">Full Aurii Plan</b></div>
           <div><small>Price</small><b id="summaryPrice">$350</b></div>
@@ -1236,7 +1298,7 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
   </div>
 </div>
 <script>
-var $=function(q,r){return (r||document).querySelector(q)},$$=function(q,r){return [].slice.call((r||document).querySelectorAll(q))};var selectedPlan='Full Aurii Plan',step=0,selectedGoal='',uploaded=false;var studies={face:[['Skin & complexion','Even tone, clear skin and good lighting shape how rested and healthy you read.','Face'],['Hair & framing','Cut and hairline framing change perceived face shape fast.','Face'],['Features in balance','Aurii maps proportion and symmetry cues to find your highest-return tweaks.','Face'],['Photo truth','Lens distance and angle distort faces; we fix capture before conclusions.','Face']],body:[['Posture & frame','Standing taller and squaring shoulders changes your silhouette instantly.','Body'],['Composition','Body-fat and muscle balance drive most visible physique change.','Body'],['Proportion','Shoulder-to-waist lines guide training and styling focus.','Body'],['Fit & styling','Clothing cut and fit can shift proportions before any gym result.','Body']],dating:[['Profile lift','Photo order, expression and context shape dating decisions in seconds.','Dating'],['Full-frame presence','Full-body shots, posture and fit read as much as the face in a profile.','Dating'],['Signal clarity','Hair, skin, frame and wardrobe communicate intentionality.','Dating'],['Safer escalation','Consult prompts stay separate from simple presentation fixes.','Dating']],career:[['Polish','Sharper headshots and grooming raise perceived professionalism.','Career'],['Build & bearing','Posture, build and how clothes fit shape perceived authority — not just grooming.','Career'],['Presence','Posture and frame read as confidence in the room.','Career'],['Spend smarter','Ranked steps prevent premature clinic or product spend.','Career']],confidence:[['Clarity','A ranked plan replaces anxious guesswork with action.','You'],['No harsh score','Aurii ranks fixes by payoff, not a public attractiveness rating.','You'],['Momentum','Small reversible wins compound into real confidence.','You'],['Kindness','Built for people who feel unsure, not to judge them.','You']]};function scard(x){return '<div class="studyCard"><b>'+x[0]+'</b><span>'+x[1]+'</span><small>'+x[2]+'</small></div>'}function renderStudies(k){k=k||'face';var g=$('#studyGrid');if(g)g.innerHTML=studies[k].map(scard).join('')}renderStudies();var report={summary:['Executive summary','Your highest-return gains likely come from capture quality, skin and hair framing for the face, posture and fit for the body, and motion cues that make your presence read calmer on camera.'],capture:['Capture quality','Before we judge anything, Aurii checks lens distance, camera height, light direction, pose tension and whether the photo or clip is distorting your face and frame.'],face:['Face analysis','Lens distance, soft side light, haircut silhouette, neckline, skin clarity and under-eye contrast, ranked by impact and reversibility.'],body:['Frame analysis','Posture and frame first, then body-composition direction, proportion-focused training emphasis, and styling that flatters your lines.'],motion:['Motion translation','Short reference clips are sampled into key frames so Aurii can note angle, cadence, posture, expression and clothing movement — then adapt the style to your proportions instead of copying it blindly.'],plan:['30-day protocol','Week 1: capture reset, grooming and posture. Week 2: hair, style and wardrobe fit. Week 3: skin, training consistency and motion drills. Week 4: reshoot, compare, decide any consult.']};$$('[data-slider]').forEach(function(s){var input=$('input',s);if(!input)return;function set(){s.style.setProperty('--split',input.value+'%')}input.addEventListener('input',set);set()});var activeModal=null,lastFocused=null,focusableSelector='a[href],button:not([disabled]),textarea:not([disabled]),input:not([disabled]),select:not([disabled]),[tabindex]:not([tabindex=\"-1\"])';function visibleFocusables(m){return $$(focusableSelector,m).filter(function(el){return !!(el.offsetWidth||el.offsetHeight||el.getClientRects().length)})}function focusFirst(m){var preferred=$$('[data-autofocus]',m).filter(function(el){return !!(el.offsetWidth||el.offsetHeight||el.getClientRects().length)})[0];var target=preferred||visibleFocusables(m)[0];if(target)setTimeout(function(){target.focus()},0)}function openModal(id){var m=$(id);if(m){lastFocused=document.activeElement;$$('.modal.open').forEach(function(x){if(x!==m){x.classList.remove('open');x.setAttribute('aria-hidden','true')}});m.classList.add('open');m.setAttribute('aria-hidden','false');document.body.classList.add('modal-open');activeModal=m;focusFirst(m)}}function closeModals(){var restore=lastFocused;$$('.modal').forEach(function(m){m.classList.remove('open');m.setAttribute('aria-hidden','true')});document.body.classList.remove('modal-open');activeModal=null;lastFocused=null;if(restore&&document.contains(restore)&&restore.focus)setTimeout(function(){restore.focus()},0)}document.addEventListener('keydown',function(e){if(!activeModal)return;if(e.key==='Escape'){e.preventDefault();closeModals();return}if(e.key==='Tab'){var f=visibleFocusables(activeModal);if(!f.length){e.preventDefault();return}var first=f[0],last=f[f.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});function updateFlow(){$$('.flowStep').forEach(function(el,i){el.classList.toggle('active',i===step)});var pb=$('#progressBar');if(pb)pb.style.width=((step+1)*25)+'%';var bs=$('#backStep');if(bs)bs.style.visibility=step?'visible':'hidden';var ns=$('#nextStep');if(ns)ns.textContent=step===2?'Complete intake':step===3?'Done':'Next';var fa=$('.flowActions');if(fa)fa.style.display=step===3?'none':'flex';var sp=$('#selectedPlan');if(sp)sp.textContent=selectedPlan}$$('[data-open-flow]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();closeModals();openModal('#flowModal');updateFlow()})});$$('[data-open-login]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();var n=$('#navLinks');if(n)n.classList.remove('open');var menu=$('#menuBtn');if(menu)menu.setAttribute('aria-expanded','false');openModal('#loginModal')})});$$('[data-close]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();closeModals()})});$$('.modal').forEach(function(m){m.addEventListener('click',function(e){if(e.target===m)closeModals()})});var db=$('#dismissBar');if(db)db.onclick=function(){$('#bar').classList.add('hidden')};var mb=$('#menuBtn');if(mb)mb.onclick=function(){var nav=$('#navLinks');if(!nav)return;var open=nav.classList.toggle('open');mb.setAttribute('aria-expanded',open?'true':'false')};$$('[data-select-plan]').forEach(function(b){b.addEventListener('click',function(){selectedPlan=b.getAttribute('data-select-plan');$$('.plan').forEach(function(p){p.style.outline=p.getAttribute('data-plan')===selectedPlan?'2px solid var(--steel)':'none'});openModal('#flowModal');updateFlow()})});$$('#studyTabs button').forEach(function(b){b.addEventListener('click',function(){$$('#studyTabs button').forEach(function(x){x.classList.remove('active')});b.classList.add('active');renderStudies(b.getAttribute('data-study'))})});$$('#reportTabs button').forEach(function(b){b.addEventListener('click',function(){$$('#reportTabs button').forEach(function(x){x.classList.remove('active')});b.classList.add('active');var k=b.getAttribute('data-tab');if(report[k]){$('#tabTitle').textContent=report[k][0];$('#tabBody').textContent=report[k][1]}})});$$('.quad').forEach(function(q){q.addEventListener('click',function(){$$('.quad').forEach(function(x){x.classList.remove('active')});q.classList.add('active');var d=$('#matrixDetail');if(d)d.textContent=q.getAttribute('data-detail')})});$$('.faqItem button').forEach(function(b){var item=b.closest('.faqItem');if(item)b.setAttribute('aria-expanded',item.classList.contains('open')?'true':'false');b.addEventListener('click',function(){var item=b.closest('.faqItem');if(!item)return;var open=item.classList.toggle('open');b.setAttribute('aria-expanded',open?'true':'false')})});$$('.goalOptions .option').forEach(function(b){b.addEventListener('click',function(){$$('.goalOptions .option').forEach(function(x){x.classList.remove('active')});b.classList.add('active');selectedGoal=b.textContent;$('#goalStatus').textContent='Selected: '+selectedGoal})});var ph=$('#photos');if(ph)ph.addEventListener('change',function(e){var files=[].slice.call(e.target.files);uploaded=files.length>0;var list=$('#fileList');if(list){list.innerHTML='';files.forEach(function(f){var row=document.createElement('div');row.textContent=f.name;list.appendChild(row)})}$('#fileStatus').textContent=uploaded?files.length+' file(s) selected.':'No files selected.'});var drop=$('label.drop[for="photos"]');if(drop&&ph)drop.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();ph.click()}});var bk=$('#backStep');if(bk)bk.onclick=function(){if(step>0){step--;updateFlow()}};var nx=$('#nextStep');if(nx)nx.onclick=function(){if(step===0&&!selectedGoal){$('#goalStatus').innerHTML='<span class="error">Choose a goal first.</span>';return}if(step===1&&!uploaded){$('#fileStatus').innerHTML='<span class="error">Select at least one image or video reference for the demo flow.</span>';return}if(step===2&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test($('#email').value)){$('#prefStatus').innerHTML='<span class="error">Enter a valid email.</span>';return}if(step<3){step++;updateFlow()}};var sl=$('#sendLogin');if(sl)sl.onclick=function(){var v=$('#loginEmail').value;$('#loginStatus').textContent=/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)?'Client portal link queued for '+v:'Enter a valid email first.'};
+var $=function(q,r){return (r||document).querySelector(q)},$$=function(q,r){return [].slice.call((r||document).querySelectorAll(q))};var selectedPlan='Full Aurii Plan',step=0,selectedGoal='',uploaded=false;var studies={face:[['Feature ratings','Aurii reads features as relationships: proportion, symmetry, harmony, framing and photo confidence.','Face'],['Skin & complexion','Tone, texture and light are treated as presentation signals, not diagnoses.','Face'],['Hair & framing','Cut, density, hairline and brows can change how the face reads before anything clinical.','Face'],['Photo truth','Lens distance and camera angle are checked before drawing conclusions.','Face']],body:[['Posture & frame','Neck, shoulders, stance and clothing fit can shift presence instantly.','Body'],['Composition cues','Build and proportion are discussed as presentation direction, never a health verdict.','Body'],['Silhouette','Shoulder-to-waist lines, garment structure and pose guide styling priorities.','Body'],['Movement','Short clips can reveal tension, cadence and camera behaviour still photos miss.','Body']],dating:[['Profile lift','Photo order, expression and context shape dating decisions in seconds.','Dating'],['Concept visuals','Direction boards show lighting, grooming and styling ideas without promising outcomes.','Dating'],['Signal clarity','Hair, skin, frame and wardrobe communicate intentionality.','Dating'],['Safer escalation','Clinical topics are separated from simple presentation fixes.','Dating']],career:[['Polish','Sharper headshots and grooming raise perceived professionalism.','Career'],['Build & bearing','Posture and clothes fit shape perceived authority — not just grooming.','Career'],['Presence','Camera height, stance and expression read as confidence in the room.','Career'],['Spend smarter','Ranked stages prevent premature clinic or product spend.','Career']],confidence:[['Clarity','A staged report replaces anxious guesswork with action.','You'],['No public score','Aurii uses private ratings and priorities, not a leaderboard.','You'],['Momentum','Small reversible wins compound before bigger decisions.','You'],['Boundaries','Built for people who want clarity without diagnosis, shame or pressure.','You']]};function scard(x){return '<div class="studyCard"><b>'+x[0]+'</b><span>'+x[1]+'</span><small>'+x[2]+'</small></div>'}function renderStudies(k){k=k||'face';var g=$('#studyGrid');if(g)g.innerHTML=studies[k].map(scard).join('')}renderStudies();var report={summary:['Executive summary','Your highest-return gains likely come from capture quality, skin and hair framing for the face, posture and fit for the body, and a small set of professional questions to keep for later.'],capture:['Capture quality','Before any feature rating, Aurii checks lens distance, camera height, light direction, pose tension and whether the photo or clip is distorting your face and frame.'],face:['Private feature ratings','Aurii summarises feature relationships, skin/hair/grooming signals, photo confidence and adjacent-feature harmony as private report notes — not as a public attractiveness score.'],body:['Concept visuals','AI concept visuals are direction boards for styling, grooming, lighting, posture and fit. They are labelled as concepts only, not predictions or guaranteed outcomes.'],motion:['Motion translation','Short reference clips are sampled into key frames so Aurii can note angle, cadence, posture, expression and clothing movement — then adapt the style to your proportions instead of copying it blindly.'],plan:['Staged plan','Stage 0: capture, grooming, posture, fit and habits. Stage 1: professional non-invasive help. Stage 2: clinician questions. Stage 3: surgery research only if relevant and independently assessed.']};$$('[data-slider]').forEach(function(s){var input=$('input',s);if(!input)return;function set(){s.style.setProperty('--split',input.value+'%')}input.addEventListener('input',set);set()});var activeModal=null,lastFocused=null,focusableSelector='a[href],button:not([disabled]),textarea:not([disabled]),input:not([disabled]),select:not([disabled]),[tabindex]:not([tabindex=\"-1\"])';function visibleFocusables(m){return $$(focusableSelector,m).filter(function(el){return !!(el.offsetWidth||el.offsetHeight||el.getClientRects().length)})}function focusFirst(m){var preferred=$$('[data-autofocus]',m).filter(function(el){return !!(el.offsetWidth||el.offsetHeight||el.getClientRects().length)})[0];var target=preferred||visibleFocusables(m)[0];if(target)setTimeout(function(){target.focus()},0)}function openModal(id){var m=$(id);if(m){lastFocused=document.activeElement;$$('.modal.open').forEach(function(x){if(x!==m){x.classList.remove('open');x.setAttribute('aria-hidden','true')}});m.classList.add('open');m.setAttribute('aria-hidden','false');document.body.classList.add('modal-open');activeModal=m;focusFirst(m)}}function closeModals(){var restore=lastFocused;$$('.modal').forEach(function(m){m.classList.remove('open');m.setAttribute('aria-hidden','true')});document.body.classList.remove('modal-open');activeModal=null;lastFocused=null;if(restore&&document.contains(restore)&&restore.focus)setTimeout(function(){restore.focus()},0)}document.addEventListener('keydown',function(e){if(!activeModal)return;if(e.key==='Escape'){e.preventDefault();closeModals();return}if(e.key==='Tab'){var f=visibleFocusables(activeModal);if(!f.length){e.preventDefault();return}var first=f[0],last=f[f.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});function updateFlow(){$$('.flowStep').forEach(function(el,i){el.classList.toggle('active',i===step)});var pb=$('#progressBar');if(pb)pb.style.width=((step+1)*25)+'%';var bs=$('#backStep');if(bs)bs.style.visibility=step?'visible':'hidden';var ns=$('#nextStep');if(ns)ns.textContent=step===2?'Complete intake':step===3?'Done':'Next';var fa=$('.flowActions');if(fa)fa.style.display=step===3?'none':'flex';var sp=$('#selectedPlan');if(sp)sp.textContent=selectedPlan}$$('[data-open-flow]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();closeModals();openModal('#flowModal');updateFlow()})});$$('[data-open-login]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();var n=$('#navLinks');if(n)n.classList.remove('open');var menu=$('#menuBtn');if(menu)menu.setAttribute('aria-expanded','false');openModal('#loginModal')})});$$('[data-close]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();closeModals()})});$$('.modal').forEach(function(m){m.addEventListener('click',function(e){if(e.target===m)closeModals()})});var db=$('#dismissBar');if(db)db.onclick=function(){$('#bar').classList.add('hidden')};var mb=$('#menuBtn');if(mb)mb.onclick=function(){var nav=$('#navLinks');if(!nav)return;var open=nav.classList.toggle('open');mb.setAttribute('aria-expanded',open?'true':'false')};$$('[data-select-plan]').forEach(function(b){b.addEventListener('click',function(){selectedPlan=b.getAttribute('data-select-plan');$$('.plan').forEach(function(p){p.style.outline=p.getAttribute('data-plan')===selectedPlan?'2px solid var(--steel)':'none'});openModal('#flowModal');updateFlow()})});$$('#studyTabs button').forEach(function(b){b.addEventListener('click',function(){$$('#studyTabs button').forEach(function(x){x.classList.remove('active')});b.classList.add('active');renderStudies(b.getAttribute('data-study'))})});$$('#reportTabs button').forEach(function(b){b.addEventListener('click',function(){$$('#reportTabs button').forEach(function(x){x.classList.remove('active')});b.classList.add('active');var k=b.getAttribute('data-tab');if(report[k]){$('#tabTitle').textContent=report[k][0];$('#tabBody').textContent=report[k][1]}})});$$('.quad').forEach(function(q){q.addEventListener('click',function(){$$('.quad').forEach(function(x){x.classList.remove('active')});q.classList.add('active');var d=$('#matrixDetail');if(d)d.textContent=q.getAttribute('data-detail')})});$$('.faqItem button').forEach(function(b){var item=b.closest('.faqItem');if(item)b.setAttribute('aria-expanded',item.classList.contains('open')?'true':'false');b.addEventListener('click',function(){var item=b.closest('.faqItem');if(!item)return;var open=item.classList.toggle('open');b.setAttribute('aria-expanded',open?'true':'false')})});$$('.goalOptions .option').forEach(function(b){b.addEventListener('click',function(){$$('.goalOptions .option').forEach(function(x){x.classList.remove('active')});b.classList.add('active');selectedGoal=b.textContent;$('#goalStatus').textContent='Selected: '+selectedGoal})});var ph=$('#photos');if(ph)ph.addEventListener('change',function(e){var files=[].slice.call(e.target.files);uploaded=files.length>0;var list=$('#fileList');if(list){list.innerHTML='';files.forEach(function(f){var row=document.createElement('div');row.textContent=f.name;list.appendChild(row)})}$('#fileStatus').textContent=uploaded?files.length+' file(s) selected.':'No files selected.'});var drop=$('label.drop[for="photos"]');if(drop&&ph)drop.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();ph.click()}});var bk=$('#backStep');if(bk)bk.onclick=function(){if(step>0){step--;updateFlow()}};var nx=$('#nextStep');if(nx)nx.onclick=function(){if(step===0&&!selectedGoal){$('#goalStatus').innerHTML='<span class="error">Choose a goal first.</span>';return}if(step===1&&!uploaded){$('#fileStatus').innerHTML='<span class="error">Select at least one image or video reference for the demo flow.</span>';return}if(step===2&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test($('#email').value)){$('#prefStatus').innerHTML='<span class="error">Enter a valid email.</span>';return}if(step<3){step++;updateFlow()}};var sl=$('#sendLogin');if(sl)sl.onclick=function(){var v=$('#loginEmail').value;$('#loginStatus').textContent=/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)?'Client portal link queued for '+v:'Enter a valid email first.'};
 (function(){
   $$('#navLinks a').forEach(function(a){a.addEventListener('click',function(){var n=$('#navLinks');if(n)n.classList.remove('open');var menu=$('#menuBtn');if(menu)menu.setAttribute('aria-expanded','false')})});
   function enableTabSwipe(areaSelector,tabSelector){var area=$(areaSelector);if(!area)return;var startX=0;area.addEventListener('touchstart',function(e){startX=e.changedTouches[0].clientX},{passive:true});area.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-startX;if(Math.abs(dx)<42)return;var tabs=$$(tabSelector);if(!tabs.length)return;var active=tabs.findIndex(function(t){return t.classList.contains('active')});var next=dx<0?active+1:active-1;if(next<0)next=tabs.length-1;if(next>=tabs.length)next=0;tabs[next].click();tabs[next].scrollIntoView({inline:'center',block:'nearest',behavior:'smooth'})},{passive:true})}

@@ -3,4 +3,13 @@ assets/folder-preview-media/
 index.folder-images-preview.html
 index.reference-investor-preview.html
 index.html.bak-*
+
+# Private Aurii trade-secret material — keep outside the public repo.
+docs/algorithm/
+engine/
+reports/
+private/
+
+__pycache__/
+*.pyc
 .DS_Store
