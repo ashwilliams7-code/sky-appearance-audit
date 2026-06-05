@@ -176,6 +176,37 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
 .skipLink:focus,.skipLink:focus-visible{transform:translateY(0)}
 :where(a,button,input,select,textarea,[tabindex]):focus-visible{outline:3px solid var(--teal);outline-offset:3px;box-shadow:0 0 0 5px rgba(143,169,154,.24)}
 .close:focus-visible{outline-color:var(--rosewood)}
+
+
+/* Comprehensive intake + payment-hook funnel */
+#flowModal .intakeDialog{width:min(980px,calc(100vw - 32px));max-width:980px;max-height:calc(100svh - 32px);overflow:auto;padding:clamp(22px,4vw,42px)}
+.intakeHero{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(220px,.8fr);gap:clamp(18px,3vw,32px);align-items:start;margin-bottom:18px}
+.intakeHero h3{font-family:"Fraunces",serif;font-weight:400;font-size:clamp(2rem,5vw,3.25rem);line-height:1;margin:8px 0 12px;letter-spacing:-.04em}
+.intakeHero p{color:var(--muted);line-height:1.55;margin:0}
+.intakePlanCard{border:1px solid var(--line);border-radius:1.1rem;background:linear-gradient(135deg,#fff,#F7F8F5);padding:18px;box-shadow:0 18px 50px rgba(31,42,39,.07)}
+.intakePlanCard small,.intakeStepMeta small{display:block;text-transform:uppercase;letter-spacing:.16em;font-size:.68rem;color:var(--teal);font-weight:700;margin-bottom:6px}
+.intakePlanCard b{display:block;font-family:"Fraunces",serif;font-size:1.65rem;font-weight:400;color:var(--ink)}
+.intakePlanCard span{display:block;color:var(--muted);margin-top:4px}
+.intakeStepMeta{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:14px 0 10px;color:var(--muted);font-size:.92rem}
+#flowModal .progress{height:10px;background:#EEF1EC;border-radius:999px;overflow:hidden;margin-bottom:22px}
+#flowModal .progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--sage),var(--rosewood));border-radius:999px;transition:width .28s ease}
+.flowStep>p{color:var(--muted);line-height:1.55;margin-top:-4px}
+.optionGrid,.checkGrid,.fieldGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0}
+.optionGrid.cols3{grid-template-columns:repeat(3,minmax(0,1fr))}
+#flowModal .option,.choiceCard{appearance:none;text-align:left;border:1px solid var(--line);border-radius:1rem;background:#fff;color:var(--ink);padding:15px 16px;font:inherit;line-height:1.35;cursor:pointer;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease,background .18s ease}
+#flowModal .option b,.choiceCard b{display:block;font-weight:650;margin-bottom:4px}
+#flowModal .option span,.choiceCard span{display:block;color:var(--muted);font-size:.9rem;line-height:1.45}
+#flowModal .option:hover,.choiceCard:hover{transform:translateY(-1px);border-color:rgba(143,169,154,.55);box-shadow:0 14px 34px rgba(31,42,39,.08)}
+#flowModal .option.active,.choiceCard:has(input:checked){border-color:var(--teal);background:linear-gradient(135deg,#F7F8F5,#fff);box-shadow:0 0 0 3px rgba(143,169,154,.16)}
+.choiceCard input{margin-right:9px;accent-color:var(--teal)}
+.fieldGrid{align-items:start}.fieldGrid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+#flowModal .field label{display:block;font-weight:650;margin-bottom:7px;color:var(--ink)}
+#flowModal input:not([type=file]):not([type=checkbox]),#flowModal select,#flowModal textarea{width:100%;border:1px solid var(--line);border-radius:.85rem;background:#fff;color:var(--ink);padding:12px 13px;font:inherit;min-height:46px}
+#flowModal textarea{resize:vertical;line-height:1.45}.fieldHelp{font-size:.84rem;color:var(--muted);margin-top:6px;line-height:1.45}
+.intakeChecklist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}.intakeChecklist span{display:flex;gap:8px;align-items:flex-start;color:var(--muted);font-size:.92rem}.intakeChecklist span:before{content:"";width:.5rem;height:.5rem;border-radius:50%;background:var(--sage);margin-top:.45em;flex:0 0 auto}
+.hookPanel{border:1px solid rgba(185,133,114,.28);border-radius:1.2rem;background:linear-gradient(135deg,#FFFDF8,#F7F2EA);padding:18px;margin-top:18px}.hookPanel h4{font-family:"Fraunces",serif;font-size:1.45rem;font-weight:400;margin:0 0 8px}.hookPanel p{color:var(--muted);line-height:1.55;margin:0 0 12px}.hookStats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}.hookStats div{border:1px solid var(--line);border-radius:.9rem;background:#fff;padding:12px}.hookStats small{display:block;text-transform:uppercase;letter-spacing:.12em;color:var(--teal);font-size:.62rem;font-weight:700}.hookStats b{display:block;margin-top:4px;font-size:1rem}.paymentSummary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0}.paymentSummary div{border:1px solid var(--line);border-radius:1rem;background:#fff;padding:14px}.paymentSummary small{display:block;color:var(--muted);margin-bottom:4px}.paymentSummary b{font-size:1.08rem}.secureNote{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:.92rem;line-height:1.45;margin-top:12px}.secureNote:before{content:"↳";color:var(--rosewood);font-weight:700}.flowActions{position:sticky;bottom:-1px;background:linear-gradient(180deg,rgba(255,253,248,0),#fff 24%);padding-top:18px}.status .error,.error{color:#9b3b2f;font-weight:650}.status .ok{color:#3f6f58;font-weight:650}
+@media(max-width:760px){#flowModal .intakeDialog{width:calc(100vw - 18px);max-height:calc(100svh - 18px);padding:20px}.intakeHero,.optionGrid,.optionGrid.cols3,.checkGrid,.fieldGrid,.fieldGrid.three,.intakeChecklist,.hookStats,.paymentSummary{grid-template-columns:1fr}.intakeStepMeta{align-items:flex-start;flex-direction:column}.flowActions{gap:10px}.flowActions .btn{flex:1}}
+
 </style>
 </head>
 <body>
@@ -1055,39 +1086,142 @@ html{background:#fff}body{background:#fff;color:var(--ink)}section[id]{scroll-ma
   </div>
 </footer><button type="button" class="btn mobileCta" data-open-flow>Start my plan</button>
 <div class="modal" id="flowModal" role="dialog" aria-modal="true" aria-labelledby="flowModalTitle" aria-hidden="true">
-  <div class="dialog">
+  <div class="dialog intakeDialog">
     <button type="button" class="close" data-close aria-label="Close intake dialog">×</button>
-    <div class="eyebrow">Aurii intake</div>
-    <h3 id="flowModalTitle">Start your appearance plan</h3>
-    <p>Selected plan: <b id="selectedPlan">Full Aurii Plan</b></p>
-    <div class="progress"><i id="progressBar"></i></div>
-    <div class="flowStep active" data-step="0">
-      <h3>What is your main goal?</h3>
-      <div class="options goalOptions">
-        <button type="button" class="option" data-autofocus>Dating &amp; profile photos</button>
-        <button type="button" class="option">Full face &amp; body glow-up</button>
-        <button type="button" class="option">Professional presence</button>
-        <button type="button" class="option">Consult clarity</button>
+    <div class="intakeHero">
+      <div>
+        <div class="eyebrow">Aurii private intake</div>
+        <h3 id="flowModalTitle">Build your appearance brief.</h3>
+        <p>Answer the same questions a high-touch consultant would ask before reading your face, frame, photos, grooming, style and priorities. At the end, your personalised brief is ready to unlock with payment.</p>
       </div>
-      <p class="status" id="goalStatus"></p>
+      <aside class="intakePlanCard" aria-live="polite">
+        <small>Selected analysis</small>
+        <b id="selectedPlan">Full Aurii Plan</b>
+        <span id="selectedPrice">$350</span>
+        <span>Checkout appears after the final intake step.</span>
+      </aside>
     </div>
+    <div class="intakeStepMeta">
+      <span id="intakeStepLabel">Step 1 of 7</span>
+      <span id="intakePayHint">Your answers become the brief customers feel invested in.</span>
+    </div>
+    <div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+
+    <div class="flowStep active" data-step="0">
+      <h3>What are you trying to change?</h3>
+      <p>Start with the outcome. Aurii uses this to frame the whole report around the situations that matter most.</p>
+      <div class="options goalOptions optionGrid cols3">
+        <button type="button" class="option" data-autofocus><b>Dating &amp; profile photos</b><span>Better photos, sharper first impression, more confidence.</span></button>
+        <button type="button" class="option"><b>Full face &amp; body glow-up</b><span>Rank the highest-return changes across face, physique and style.</span></button>
+        <button type="button" class="option"><b>Professional presence</b><span>Headshots, grooming, posture and polish for work contexts.</span></button>
+        <button type="button" class="option"><b>Skin, hair &amp; grooming</b><span>Routine, cut, facial hair, clarity and visible maintenance.</span></button>
+        <button type="button" class="option"><b>Physique &amp; styling</b><span>Posture, proportions, training emphasis, fit and silhouette.</span></button>
+        <button type="button" class="option"><b>Consult clarity</b><span>Separate reversible wins from topics to ask a professional.</span></button>
+      </div>
+      <p class="status" id="goalStatus" aria-live="polite"></p>
+    </div>
+
     <div class="flowStep" data-step="1">
-      <h3>Upload your photo set + optional video reference</h3>
-      <label class="drop" for="photos" role="button" tabindex="0" aria-controls="photos" aria-describedby="fileStatus"><b>Click to choose images or a short clip</b><br><span>Face: front, smile, profile, 45°. Body: front and side. Optional: a 10–30 sec style/motion reference. Demo keeps files local.</span></label>
+      <h3>Your baseline context</h3>
+      <p>This makes the report feel personal before checkout — not a generic PDF.</p>
+      <div class="fieldGrid three">
+        <div class="field"><label for="name">First name</label><input id="name" type="text" placeholder="Ash" autocomplete="given-name"></div>
+        <div class="field"><label for="ageRange">Age range</label><select id="ageRange"><option value="">Choose range</option><option>18–24</option><option>25–34</option><option>35–44</option><option>45+</option></select></div>
+        <div class="field"><label for="intakeTimeline">When do you want results?</label><select id="intakeTimeline"><option value="">Choose timeline</option><option>This week</option><option>30 days</option><option>3 months</option><option>Long-term protocol</option></select></div>
+      </div>
+      <div class="fieldGrid">
+        <div class="field"><label for="currentConfidence">Current photo confidence</label><select id="currentConfidence"><option value="">Choose level</option><option>Low — I avoid photos</option><option>Mixed — sometimes good, inconsistent</option><option>Okay — want sharper direction</option><option>High — optimizing details</option></select></div>
+        <div class="field"><label for="useCase">Main use case</label><select id="useCase"><option value="">Choose use case</option><option>Dating profile</option><option>Social media / personal brand</option><option>Professional headshots</option><option>Everyday confidence</option><option>Clinic or stylist consult prep</option></select></div>
+      </div>
+      <p class="status" id="contextStatus" aria-live="polite"></p>
+    </div>
+
+    <div class="flowStep" data-step="2">
+      <h3>Face, skin, hair and grooming map</h3>
+      <p>Pick the areas you want Aurii to inspect. This creates a visible sense of diagnostic depth before the pay step.</p>
+      <div class="checkGrid">
+        <label class="choiceCard"><input type="checkbox" name="faceFocus" value="Skin tone, texture and visible clarity"><b>Skin clarity</b><span>Tone, texture, redness, oiliness, visible routine gaps.</span></label>
+        <label class="choiceCard"><input type="checkbox" name="faceFocus" value="Hair shape, density, styling and hairline framing"><b>Hair framing</b><span>Cut, density, hairline, styling, face-shape fit.</span></label>
+        <label class="choiceCard"><input type="checkbox" name="faceFocus" value="Facial hair and grooming details"><b>Facial hair</b><span>Beard shape, stubble, neckline, maintenance level.</span></label>
+        <label class="choiceCard"><input type="checkbox" name="faceFocus" value="Expression, eye contact and photo warmth"><b>Expression</b><span>Smile, eyes, tension, approachability and confidence.</span></label>
+        <label class="choiceCard"><input type="checkbox" name="faceFocus" value="Feature balance and photo angle distortion"><b>Feature balance</b><span>What is real vs lens, angle and lighting distortion.</span></label>
+        <label class="choiceCard"><input type="checkbox" name="faceFocus" value="Teeth, smile and professional consult questions"><b>Smile cues</b><span>Non-medical observations and questions for professionals.</span></label>
+      </div>
+      <div class="field"><label for="faceNotes">Anything about your face you overthink?</label><textarea id="faceNotes" rows="3" placeholder="e.g. jaw, skin, hairline, asymmetry, photos never looking like the mirror"></textarea></div>
+      <p class="status" id="faceStatus" aria-live="polite"></p>
+    </div>
+
+    <div class="flowStep" data-step="3">
+      <h3>Body, posture, style and presence map</h3>
+      <p>Aurii reads the whole image: frame, clothes, posture, movement and how the face is presented by the body.</p>
+      <div class="checkGrid">
+        <label class="choiceCard"><input type="checkbox" name="bodyFocus" value="Posture, neck, shoulders and standing tension"><b>Posture</b><span>Neck, shoulders, pelvis, stance and visible tension.</span></label>
+        <label class="choiceCard"><input type="checkbox" name="bodyFocus" value="Physique direction and training emphasis"><b>Physique direction</b><span>Training emphasis, composition and proportion cues.</span></label>
+        <label class="choiceCard"><input type="checkbox" name="bodyFocus" value="Wardrobe fit and silhouette"><b>Fit &amp; silhouette</b><span>Cut, tailoring, proportions, shoulder/waist lines.</span></label>
+        <label class="choiceCard"><input type="checkbox" name="bodyFocus" value="Colour, styling and personal aesthetic"><b>Style direction</b><span>Colours, vibe, grooming/style consistency.</span></label>
+        <label class="choiceCard"><input type="checkbox" name="bodyFocus" value="Movement, posing and video presence"><b>Movement</b><span>Walk, posing, camera behavior, reference video.</span></label>
+        <label class="choiceCard"><input type="checkbox" name="bodyFocus" value="Dating and social first-impression cues"><b>First impression</b><span>How your full frame reads in social/dating contexts.</span></label>
+      </div>
+      <div class="fieldGrid">
+        <div class="field"><label for="trainingLevel">Training / movement baseline</label><select id="trainingLevel"><option value="">Choose baseline</option><option>Not training currently</option><option>Light / inconsistent</option><option>Consistent gym or sport</option><option>Advanced / optimizing</option></select></div>
+        <div class="field"><label for="styleCurrent">Current style feel</label><input id="styleCurrent" type="text" placeholder="e.g. casual, corporate, streetwear, unsure"></div>
+      </div>
+      <p class="status" id="bodyStatus" aria-live="polite"></p>
+    </div>
+
+    <div class="flowStep" data-step="4">
+      <h3>Upload the evidence set</h3>
+      <p>The funnel asks for enough detail that the customer feels the analysis is already being built. Demo files stay local until secure upload is connected.</p>
+      <label class="drop" for="photos" role="button" tabindex="0" aria-controls="photos" aria-describedby="fileStatus"><b>Choose face, body and optional video references</b><br><span>Recommended: front face, smile, profile, 45°, full-body front, full-body side, plus a 10–30 sec movement/style clip.</span></label>
       <input id="photos" type="file" accept="image/*,video/mp4,video/quicktime,video/webm" multiple class="hidden" tabindex="-1">
       <div class="files" id="fileList"></div>
-      <p class="status" id="fileStatus"></p>
+      <div class="intakeChecklist" aria-label="Recommended capture checklist">
+        <span>Natural daylight or soft indoor lighting</span><span>Camera at eye level, no extreme lens distortion</span><span>Neutral outfit for body proportions</span><span>Optional outfit/style reference you want to emulate</span>
+      </div>
+      <p class="status" id="fileStatus" aria-live="polite"></p>
     </div>
-    <div class="flowStep" data-step="2">
-      <h3>Preferences</h3>
-      <div class="field"><label for="email">Email for report handoff</label><input id="email" type="email" placeholder="you@example.com" autocomplete="email"></div>
-      <div class="field"><label for="boundary">Boundary</label><select id="boundary"><option selected>Non-surgical first</option><option>Open to professional consult prompts</option><option>No clinic/procedure suggestions</option></select></div>
-      <div class="field"><label for="notes">Focus / notes</label><textarea id="notes" rows="3" placeholder="e.g. face + posture, dating photos, no invasive procedures"></textarea></div>
-      <p class="status" id="prefStatus"></p>
+
+    <div class="flowStep" data-step="5">
+      <h3>Boundaries, privacy and off-limits areas</h3>
+      <p>This keeps Aurii high-trust: clear about non-medical scope, privacy and what the user does not want.</p>
+      <div class="fieldGrid">
+        <div class="field"><label for="boundary">Recommendation boundary</label><select id="boundary"><option selected>Non-surgical first</option><option>Open to professional consult prompts</option><option>No clinic/procedure suggestions</option><option>Styling and grooming only</option></select></div>
+        <div class="field"><label for="tonePreference">Feedback tone</label><select id="tonePreference"><option>Kind and direct</option><option>Very gentle</option><option>Blunt but respectful</option><option>Data-first / clinical</option></select></div>
+      </div>
+      <div class="field"><label for="offLimits">Anything off-limits or sensitive?</label><textarea id="offLimits" rows="3" placeholder="e.g. no surgery talk, avoid weight focus, no comments on a specific feature"></textarea></div>
+      <div class="checkGrid">
+        <label class="choiceCard"><input type="checkbox" id="privacyConsent"><b>Privacy acknowledgement</b><span>I understand photos should only be sent through a secure upload/payment flow when connected.</span></label>
+        <label class="choiceCard"><input type="checkbox" id="medicalConsent"><b>Non-medical scope</b><span>I understand Aurii gives appearance guidance only — no diagnosis, treatment or prescription.</span></label>
+      </div>
+      <p class="status" id="boundaryStatus" aria-live="polite"></p>
     </div>
-    <div class="flowStep" data-step="3">
-      <div class="success"><h3>Demo intake complete</h3><p>Your Aurii request is ready. We’ll connect secure upload, payment and report delivery before opening the beta.</p></div>
+
+    <div class="flowStep" data-step="6">
+      <h3>Your brief is ready to unlock</h3>
+      <p>The hook: after they have invested effort, show the plan summary and move them into checkout.</p>
+      <div class="fieldGrid">
+        <div class="field"><label for="email">Email for report handoff</label><input id="email" type="email" placeholder="you@example.com" autocomplete="email"></div>
+        <div class="field"><label for="phone">Phone / WhatsApp optional</label><input id="phone" type="tel" placeholder="Optional" autocomplete="tel"><div class="fieldHelp">Useful for concierge-style follow-up. Optional.</div></div>
+      </div>
+      <div class="hookPanel">
+        <h4>We have enough to build your private Aurii brief.</h4>
+        <p>Next step: secure payment unlocks the analysis queue, report handoff and personalised protocol.</p>
+        <div class="paymentSummary">
+          <div><small>Plan</small><b id="summaryPlan">Full Aurii Plan</b></div>
+          <div><small>Price</small><b id="summaryPrice">$350</b></div>
+          <div><small>Goal</small><b id="summaryGoal">Not selected yet</b></div>
+        </div>
+        <div class="hookStats">
+          <div><small>Brief depth</small><b id="summaryDepth">Face + body</b></div>
+          <div><small>Evidence</small><b id="summaryFiles">No files yet</b></div>
+          <div><small>Delivery</small><b>Private report</b></div>
+        </div>
+        <button type="button" class="btn green" id="checkoutButton">Continue to secure payment</button>
+        <p class="secureNote">Stripe or Payment Links can be connected to this button; the current static demo shows the exact pay-at-end moment without transmitting data.</p>
+      </div>
+      <p class="status" id="checkoutStatus" aria-live="polite"></p>
     </div>
+
     <div class="flowActions"><button type="button" class="btn light" id="backStep">Back</button><button type="button" class="btn" id="nextStep">Next</button></div>
   </div>
 </div>
@@ -1111,6 +1245,70 @@ var $=function(q,r){return (r||document).querySelector(q)},$$=function(q,r){retu
   ['.heroProofs','#motion-lab .motionFlow','.science .studyGrid','#results .resultGallery','#capabilities .tiles','.analysisGrid','.factorGrid','#insights .tiles.cols3','.pricing'].forEach(function(sel){var el=$(sel);if(el&&!el.previousElementSibling?.classList?.contains('mobileSwipeHint')){var hint=document.createElement('div');hint.className='mobileSwipeHint';hint.textContent='Swipe for more';el.parentNode.insertBefore(hint,el)}});
   var finalArea=$('.final')||$('.footer');if(finalArea&&'IntersectionObserver'in window){new IntersectionObserver(function(entries){document.body.classList.toggle('hide-mobile-cta',entries[0].isIntersecting)},{threshold:.15}).observe(finalArea)}
 })();
+
+
+/* Comprehensive intake funnel behavior */
+(function(){
+  var TOTAL_STEPS=7;
+  var planPrices={'Snapshot':'$99','Full Aurii Plan':'$350','Concierge':'$450'};
+  var checkoutLinks={'Snapshot':'','Full Aurii Plan':'','Concierge':''};
+  function price(){return planPrices[selectedPlan]||'$350'}
+  function val(id){var el=$('#'+id);return el?String(el.value||'').trim():''}
+  function checked(name){return $$('input[name="'+name+'"]:checked').map(function(x){return x.value})}
+  function emailOK(v){return /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)}
+  function setStatus(id,msg,type){var el=$('#'+id);if(el)el.innerHTML=msg?'<span class="'+(type||'ok')+'">'+msg+'</span>':''}
+  function fileCount(){var ph=$('#photos');return ph&&ph.files?ph.files.length:0}
+  function refreshSummary(){
+    var p=price();
+    [['selectedPlan',selectedPlan],['selectedPrice',p],['summaryPlan',selectedPlan],['summaryPrice',p],['summaryGoal',selectedGoal||'Not selected yet']].forEach(function(pair){var el=$('#'+pair[0]);if(el)el.textContent=pair[1]});
+    var depth=[]; if(checked('faceFocus').length) depth.push('face'); if(checked('bodyFocus').length) depth.push('body');
+    var d=$('#summaryDepth'); if(d)d.textContent=depth.length?depth.join(' + '):'Face + body';
+    var sf=$('#summaryFiles'); if(sf)sf.textContent=fileCount()?fileCount()+' file(s) selected':'No files yet';
+  }
+  window.updateFlow=function(){
+    $$('.flowStep').forEach(function(el){var i=parseInt(el.getAttribute('data-step')||'0',10);el.classList.toggle('active',i===step)});
+    var pb=$('#progressBar'); if(pb)pb.style.width=(((step+1)/TOTAL_STEPS)*100)+'%';
+    var label=$('#intakeStepLabel'); if(label)label.textContent='Step '+(step+1)+' of '+TOTAL_STEPS;
+    var hint=$('#intakePayHint'); if(hint)hint.textContent=step<TOTAL_STEPS-1?'Checkout appears after your brief is complete.':'Your brief is complete — unlock it with payment.';
+    var bs=$('#backStep'); if(bs)bs.style.visibility=step?'visible':'hidden';
+    var ns=$('#nextStep'); if(ns)ns.textContent=step===TOTAL_STEPS-1?'Continue to secure payment':'Next';
+    var fa=$('.flowActions'); if(fa)fa.style.display='flex';
+    refreshSummary();
+  };
+  $$('.goalOptions .option').forEach(function(b){b.addEventListener('click',function(){
+    $$('.goalOptions .option').forEach(function(x){x.classList.remove('active')});
+    b.classList.add('active'); selectedGoal=(b.querySelector('b')||b).textContent.trim(); setStatus('goalStatus','Selected: '+selectedGoal,'ok'); refreshSummary();
+  })});
+  $$('input[name="faceFocus"],input[name="bodyFocus"],#privacyConsent,#medicalConsent').forEach(function(el){el.addEventListener('change',refreshSummary)});
+  var ph=$('#photos');
+  if(ph)ph.addEventListener('change',function(e){var files=[].slice.call(e.target.files||[]);uploaded=files.length>0;var list=$('#fileList');if(list){list.innerHTML='';files.forEach(function(f){var row=document.createElement('div');row.textContent=f.name;list.appendChild(row)})}setStatus('fileStatus',uploaded?files.length+' evidence file(s) selected.':'No files selected.',uploaded?'ok':'error');refreshSummary()});
+  var drop=$('label.drop[for="photos"]');
+  if(drop&&ph)drop.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();ph.click()}});
+  function validateStep(){
+    if(step===0&&!selectedGoal){setStatus('goalStatus','Choose the outcome they care about first.','error');return false}
+    if(step===1&&(!val('ageRange')||!val('intakeTimeline')||!val('currentConfidence')||!val('useCase'))){setStatus('contextStatus','Choose the baseline fields so the brief feels personal.','error');return false}
+    if(step===2&&checked('faceFocus').length<2&&!val('faceNotes')){setStatus('faceStatus','Pick at least two face/grooming areas, or write a note.','error');return false}
+    if(step===3&&checked('bodyFocus').length<2&&!val('styleCurrent')){setStatus('bodyStatus','Pick at least two body/style areas, or describe your style baseline.','error');return false}
+    if(step===4&&!uploaded){setStatus('fileStatus','Select at least one image or video reference for the demo flow.','error');return false}
+    if(step===5&&(!$('#privacyConsent')?.checked||!$('#medicalConsent')?.checked)){setStatus('boundaryStatus','Confirm privacy and non-medical scope before checkout.','error');return false}
+    if(step===6&&!emailOK(val('email'))){setStatus('checkoutStatus','Enter a valid email before payment.','error');return false}
+    ['contextStatus','faceStatus','bodyStatus','boundaryStatus','checkoutStatus'].forEach(function(id){setStatus(id,'','ok')}); return true
+  }
+  function checkout(){
+    if(!validateStep())return;
+    var link=checkoutLinks[selectedPlan];
+    var msg='Ready: connect '+selectedPlan+' '+price()+' to Stripe/Payment Links here. In production this button opens secure checkout after the completed intake.';
+    if(link){window.location.href=link;return}
+    setStatus('checkoutStatus',msg,'ok');
+  }
+  var bk=$('#backStep'); if(bk)bk.onclick=function(){if(step>0){step--;updateFlow()}};
+  var nx=$('#nextStep'); if(nx)nx.onclick=function(){if(step<TOTAL_STEPS-1){if(validateStep()){step++;updateFlow()}}else checkout()};
+  var cb=$('#checkoutButton'); if(cb)cb.onclick=checkout;
+  $$('[data-open-flow]').forEach(function(b){b.addEventListener('click',function(){step=0;setTimeout(updateFlow,0)})});
+  $$('[data-select-plan]').forEach(function(b){b.addEventListener('click',function(){selectedPlan=b.getAttribute('data-select-plan')||selectedPlan;step=0;setTimeout(updateFlow,0)})});
+  updateFlow();
+})();
+
 </script>
 </body>
 </html>
